@@ -15,3 +15,10 @@
     @content;
   }
 }
+
+@mixin font($ls, $fs, $lh) {
+  letter-spacing: $ls;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+}

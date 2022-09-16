@@ -5,12 +5,18 @@ body {
   color: var(--primary-text-color);
 
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.04em;
-  font-size: 14px;
-  // line-height: 1.76;
 }
 
-section {
+.section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
 }

@@ -16,9 +16,9 @@
   }
 }
 
-@mixin font($ls, $fs, $lh, $fw) {
-  letter-spacing: $ls;
-  font-size: $fs;
-  line-height: $lh;
+@mixin font($fw, $fsz, $lh, $ls) {
   font-weight: $fw;
+  font-size: $fsz;
+  line-height: $lh;
+  letter-spacing: $ls;
 }

@@ -1,3 +1,33 @@
 .header {
-  background-color: rgb(241, 131, 131);
+  background-color: var(--main-background-color);
 }
+
+.header-icon {
+  fill: var(--accent-color);
+  margin-top: 12px;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-left: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 8px;
+    margin-left: 0px;
+  }  
+}
+
+.mob-menu-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+
+}
+.mob-menu-button {
+  background-color: red;  
+  border: none;
+}
+.mob-menu-icon {
+  justify-content: center;
+  align-content: center;
+  fill: var(--secondary-text-color);
+}
+

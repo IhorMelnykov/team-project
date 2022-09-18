@@ -37,6 +37,7 @@
 
   &__text-wrapper {
     width: 220px;
+    margin-top: 370px;
   }
 
   &__text {
@@ -46,8 +47,6 @@
   }
 
   &__text:first-child {
-    margin-top: 40px;
-
     @include font(null, 12px, 1.76, 0.04em);
   }
 
@@ -61,4 +60,15 @@
 .read-btn {
   width: 164px;
   margin-top: 20px;
+  transition: color var(--main-transition),
+    background-color var(--main-transition);
+}
+
+.read-btn__icon {
+  transition: fill var(--main-transition);
+
+  .read-btn:hover &,
+  .read-btn:focus & {
+    fill: var(--secondary-text-color);
+  }
 }

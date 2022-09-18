@@ -11,13 +11,20 @@
 .header-icon {
   fill: var(--accent-color);
   margin-top: 12px;
+  width: 40px;
+  height: 37px;
   @media screen and (min-width: 768px) {
     margin-top: 20px;
     margin-left: 12px;
+    width: 48px;
+    height: 44px;
+    
   }
   @media screen and (min-width: 1200px) {
     margin-top: 8px;
-    margin-left: 0px;
+    margin-left: 0px; 
+    width: 60px;
+    height: 65px;
   }  
 }
 
@@ -31,22 +38,18 @@
       max-width: 1200px;
       display: block;
       margin-left: 270px;
+      margin-top: 40px;
   }
 }
 .header-nav-list {
   display: flex;
   gap: 50px;
-  @media screen and (min-width: 768px) {
-      max-width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-      max-width: 1200px;
-  }    
+  color: var(--secondary-text-color);
+   
 }
 .header-nav-item {
   @include font (700, 32px, 1.22, 0.03em);
-
-  @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
     @include font (700, 48px, 1.22, 0.03em);
 }
   @media screen and (min-width: 1200px) {
@@ -54,45 +57,69 @@
 }    
 }
 
+.header-button {
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font (600, 14px, 1.14, 0.03em);
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 10px;
+  width: 152px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 32px;
+}
+@media screen and (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 16px
+}
+
+}
+
 .mob-menu-btn {
   position: absolute;
-  /* z-index: 1; */
   top: 16px;
   right: 20px;
   @media screen and (min-width: 768px) {
     position: absolute;
-  /*   z-index: 1; */
-    top: 16px;
-    right: 20px;
+    top: 28px;
+    right: 216px;
 }
   @media screen and (min-width: 1200px) {
     display: none;
 }    
-
 }
 .mob-menu-button {
   background-color: var(--main-background-color);  
   border: none;
 }
+
 .mob-menu-icon {
   justify-content: center;
   align-content: center;
   fill: var(--secondary-text-color);
-  width: 41px;
-  height: 37px;
+
   @media screen and (min-width: 768px) {
-    width: 48px;
-    height: 44px;
-}
+
+  }
   @media screen and (min-width: 1200px) {
-    width: 60px;
-    height: 65px;
-}  
+
+  }  
 }
 
 .mob-menu {
   position: fixed;
-  background-color: #cf1717;
+  background-color: var(--main-background-color);
   z-index: 1;
   top: 0;
   left: 0;
@@ -100,4 +127,100 @@
   height: 100vh;
   padding-top: 10px;
   padding-bottom: 48px;
+}
+
+.mob-menu-top {
+position: absolute;
+top: 32px;
+right: 32px;
+@media screen and (min-width: 768px) {
+  top: 32px;
+  right: 32px;
+}
+@media screen and (min-width: 1200px) {      
+  top: 32px;
+  right: 32px;
+  
+}
+}
+
+.menu-close {
+  background-color: var(--main-background-color);
+  border: none;
+}
+
+.mob-menu-close {
+  fill: var(--secondary-text-color);
+  
+}
+
+.mob-menu-nav {
+  display: block;
+  margin-top: 100px;
+  @media screen and (min-width: 768px) {
+      display: block;
+      margin-top: 140px;
+  }
+  @media screen and (min-width: 1200px) {      
+      display: none;
+      
+  }
+}
+.mob-menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: var(--secondary-text-color);
+  @include font (700, 32px, 1.2, 0.03em);
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    gap: 40px;    
+    @include font (700, 40px, 1.47, 0.03em);
+  }
+  @media screen and (min-width: 1200px) {
+      
+  }    
+}
+
+
+.mob-menu-buy {
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font (600, 14px, 1.14, 0.03em);
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 10px;
+  width: 152px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 164px;
+  bottom: 63px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+    @media screen and (min-width: 1200px) {
+    display: none;
+  }   
+}
+
+.mob-menu-mobile {
+  fill: var( --accent-color);
+  width: 40px;
+  height: 37px;
+  position: absolute;
+  top: 12px;
+  left: 31px;
+  @media screen and (min-width: 768px) {
+    width: 48px;
+    height: 44px;
+    top: 20px;
+    left: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 60px;
+    height: 65px;
+  }  
 }

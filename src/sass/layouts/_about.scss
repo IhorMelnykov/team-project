@@ -33,6 +33,11 @@
     color: var(--secondary-text-color);
   }
 
+  // .about__image-wrapper {
+  //   outline: 1px solid green;
+  //   width: 100%;
+  // }
+
   &__image {
     outline: 1px solid red;
     position: absolute;
@@ -52,6 +57,9 @@
   &__text-wrapper {
     width: 220px;
     margin-top: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 
   &__text {
@@ -60,11 +68,17 @@
     color: var(--secondary-text-color);
   }
 
-  &__text:first-child {
+  &__text:nth-child(1) {
     @include font(null, 12px, 1.76, 0.04em);
   }
 
-  &__text:last-child {
+  &__text:nth-child(2) {
+    margin-top: 4px;
+
+    @include font(null, 12px, 1.62, null);
+  }
+
+  &__text:nth-child(3) {
     margin-top: 4px;
 
     @include font(null, 12px, 1.62, null);

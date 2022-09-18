@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">ice cream made with passion</h1>
+          <button class="hero-button">Products</button>
+          <p class="hero-text">How it’s made?</p>
+          <div class="hero-list">
+            <picture>
+              <source
+                srcset="
+                  ../images/hero-image/plate-ice-cream1.jpg    1x,
+                  ../images/hero-image/plate-ice-cream1@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+
+              <img
+                class="hero-list__image"
+                src="../images/hero-image/plate-ice-cream.jpg"
+                alt="plate-ice-cream"
+                width="225"
+                height="225"
+              />
+            </picture>
+            <p class="hero-list__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+          </div>
+          <div class="hero-part">
+            <picture>
+              <source
+                srcset="
+                  ../images/hero-image/big-ice-cream.jpg    1x,
+                  ../images/hero-image/big-ice-cream@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                class="hero-part__image"
+                src="../images/hero-image/big-ice-cream1.jpg"
+                alt="big-ice-cream"
+                width="447"
+                height="561"
+              />
+            </picture>
+            <div class="hero-numbers">
+              <h2 class="hero-numbers__one">16</h2>
+              <p class="hero-numbers__text">cafes</p>
+              <h2 class="hero-numbers__two">23</h2>
+              <p class="hero-numbers__text">food trucks</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

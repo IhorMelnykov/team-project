@@ -1,7 +1,11 @@
 .about {
+  outline: 1px solid orange;
+
   position: relative;
 
   &__wrapper {
+    outline: 1px solid yellow;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,49 +33,25 @@
     color: var(--secondary-text-color);
   }
 
-  &__image-wrapper {
-    outline: 1px solid yellow;
-    width: 100%;
-
-    // @media screen and (max-width: 479.5px) {
-    //   width: 281px;
-    // }
-  }
-
   &__image {
-    outline: 1px solid orange;
-
+    outline: 1px solid red;
     position: absolute;
-    top: 265px;
+    top: 243px;
     left: 50%;
 
     transform: translateX(-50%);
 
-    // width: 100%;
-    // width: 280px;
+    border-radius: 50%;
+    box-shadow: 0px 4.48583px 16.8218px rgb(153 114 23 / 25%);
 
-    // background-color: var(--accent-color);
-    // background-position: -22px;
-    // box-shadow: 0 -4.48583px 16.8218px #99721740;
-    // border-radius: 50%;
-
-    // @include tablet {
-    //   width: 330px;
+    // @media screen and (min-width: 768px) {
+    //   width: 331px;
     // }
   }
 
   &__text-wrapper {
     width: 220px;
     margin-top: 370px;
-
-    @media screen and (max-width: 319.5px) {
-      width: 100%;
-    }
-
-    @include tablet {
-      width: 336px;
-      outline: 1px solid lime;
-    }
   }
 
   &__text {
@@ -80,48 +60,14 @@
     color: var(--secondary-text-color);
   }
 
-  &__text:nth-child(1) {
+  &__text:first-child {
     @include font(null, 12px, 1.76, 0.04em);
   }
 
-  &__text:nth-child(2) {
+  &__text:last-child {
     margin-top: 4px;
 
     @include font(null, 12px, 1.62, null);
-  }
-
-  &__text:nth-child(3) {
-    @mixin fonts($fw, $fs, $lh, $ls: 0) {
-      font-weight: $fw;
-      font-size: $fs + px;
-      line-height: $lh/$fs;
-      letter-spacing: $ls + em;
-    }
-
-    @include fonts(null, 12, 23, 0.04); // @include font(null, 12, 1.94, 0.04em)
-    // font-family: 'Montserrat';
-    // font-style: normal;
-    // font-weight: 400;
-    // font-size: 12px;
-    // line-height: 194%;
-    // /* or 23px */
-
-    // letter-spacing: 0.04em;
-
-    color: #fcfcfc;
-
-    @media screen and (max-width: 768px) {
-      position: absolute;
-      white-space: nowrap;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      border: 0;
-      padding: 0;
-      clip: rect(0 0 0 0);
-      clip-path: inset(50%);
-      margin: -1px;
-    }
   }
 }
 

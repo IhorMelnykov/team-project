@@ -1,4 +1,6 @@
 .about {
+  position: relative;
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -6,8 +8,7 @@
   }
 
   &__pre-title {
-    @include font(null, 18, 1.22, 700);
-    //   @include font(700, 18, 1.22, null);
+    @include font(700, 18, 1.22, null);
 
     text-align: center;
     text-transform: uppercase;
@@ -20,8 +21,7 @@
     width: 200px;
 
     font-family: 'Seymour One';
-    @include font(0.04em, 30px, 1.27, 400);
-    //   @include font(400, 30px, 1.27, 0.04em);
+    @include font(400, 30px, 1.27, 0.04em);
 
     text-align: center;
     text-transform: uppercase;
@@ -30,7 +30,9 @@
   }
 
   &__image {
-    margin-top: 32px;
+    position: absolute;
+    top: 240px;
+    left: 20px;
   }
 
   &__text-wrapper {
@@ -46,8 +48,7 @@
   &__text:first-child {
     margin-top: 40px;
 
-    @include font(0.04em, 12px, 1.76, null);
-    //   @include font(null, 12px, 1.76, 0.04em);
+    @include font(null, 12px, 1.76, 0.04em);
   }
 
   &__text:last-child {

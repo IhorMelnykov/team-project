@@ -8,24 +8,19 @@
   }
 
   &__pre-title {
-    @include font(700, 18, 1.22, null);
-
+    @include fonts(700, 18, 22);
     text-align: center;
     text-transform: uppercase;
-
     color: var(--secondary-text-color);
   }
 
   &__title {
     margin-top: 12px;
     width: 200px;
-
     font-family: 'Seymour One';
-    @include font(400, 30px, 1.27, 0.04em);
-
+    @include fonts(400, 30, 38, 0.04);
     text-align: center;
     text-transform: uppercase;
-
     color: var(--secondary-text-color);
   }
 
@@ -46,14 +41,14 @@
     color: var(--secondary-text-color);
   }
 
-  &__text:first-child {
-    @include font(null, 12px, 1.76, 0.04em);
+  &__text:nth-child(1) {
+    @include fonts(null, 12, 21, 0.04);
   }
-
-  &__text:last-child {
-    margin-top: 4px;
-
-    @include font(null, 12px, 1.62, null);
+  &__text:nth-child(2) {
+    @include fonts(null, 12, 19);
+  }
+  &__text:nth-child(3) {
+    @include fonts(null, 12, 23, 0.04);
   }
 }
 

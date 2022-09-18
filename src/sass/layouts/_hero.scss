@@ -1,17 +1,85 @@
-//@media screen and (min-width: 480px) {
-//  .hero {
-//    background-image: url(/src/images/hero-image/mobile-fon.jpg);
-//  }
-//}
+.hero {
+  background-image: var(--main-background-color),
+    url(/src/images/hero-image/desktop-fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-//@media screen and (min-width: 768px) {
-//  .hero {
-//    background-image: url(/src/images/hero-image/tablet-fon.jpg);
-//  }
-//}
+.hero-title {
+  width: 367px;
+  position: absolute;
 
-//@media screen and (min-width: 1200px) {
-//  .hero {
-//    background-image: url(/src/images/hero-image/desktop-fon.jpg);
-//  }
-//}
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+.hero-button {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  color: var(--primary-text-color);
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  padding-right: 34px;
+
+  margin-top: 28px;
+  margin-right: 34px;
+}
+
+.hero-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  display: block;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: var(--accent-color);
+
+  margin-top: 40px;
+  margin-left: 34px;
+  margin-right: 356px;
+  margin-bottom: 55px;
+}
+
+.hero-list {
+  position: absolute;
+  margin-top: 42px;
+  margin-bottom: 65px;
+}
+
+.hero-part__image {
+  margin-left: 651px;
+  margin-right: 103px;
+  margin-bottom: 0px;
+
+  background-color: var(--main-background-color);
+}
+
+.hero-numbers {
+  text-align: right;
+}

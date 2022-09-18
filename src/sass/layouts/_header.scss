@@ -1,5 +1,11 @@
 .header {
+  background-color: rgb(241, 131, 131);
   background-color: var(--main-background-color);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 .header-icon {
@@ -15,19 +21,83 @@
   }  
 }
 
+.header-nav {
+  display: none;
+  @media screen and (min-width: 768px) {
+      max-width: 768px;
+      display: none;
+  }
+  @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      display: block;
+      margin-left: 270px;
+  }
+}
+.header-nav-list {
+  display: flex;
+  gap: 50px;
+  @media screen and (min-width: 768px) {
+      max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+  }    
+}
+.header-nav-item {
+  @include font (700, 32px, 1.22, 0.03em);
+
+  @media screen and (min-width: 768px) {
+    @include font (700, 48px, 1.22, 0.03em);
+}
+  @media screen and (min-width: 1200px) {
+    @include font (700, 16px, 1.25, 0.03em);
+}    
+}
+
 .mob-menu-btn {
   position: absolute;
+  /* z-index: 1; */
   top: 16px;
   right: 20px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+  /*   z-index: 1; */
+    top: 16px;
+    right: 20px;
+}
+  @media screen and (min-width: 1200px) {
+    display: none;
+}    
 
 }
 .mob-menu-button {
-  background-color: red;  
+  background-color: var(--main-background-color);  
   border: none;
 }
 .mob-menu-icon {
   justify-content: center;
   align-content: center;
   fill: var(--secondary-text-color);
+  width: 41px;
+  height: 37px;
+  @media screen and (min-width: 768px) {
+    width: 48px;
+    height: 44px;
+}
+  @media screen and (min-width: 1200px) {
+    width: 60px;
+    height: 65px;
+}  
 }
 
+.mob-menu {
+  position: fixed;
+  background-color: #cf1717;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 48px;
+}

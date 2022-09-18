@@ -1,0 +1,194 @@
+.footer {
+    margin-top: 39px;
+    margin-bottom: 62px;
+    @include tablet {
+        margin-top: 40px;
+        margin-bottom: 13px;
+    }
+    @include desktop {
+        margin-top: 120px;
+        margin-bottom: 11px;
+    }
+    .container {
+        @include desktop {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+}
+
+.footer-content {
+    @include tablet {
+        display: flex;
+        position: relative;
+    }
+}
+
+.footer-text {
+width: 234px;
+height: 134px;
+@include tablet {
+    width: 352px;
+    height: 184px;
+}
+@include desktop {
+    width: 504px;
+    height: 122px;
+}
+}
+
+.footer-pre-title {
+    @include fonts (700, 18, 22);
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    @include tablet {
+        @include fonts (700, 26, 32, 0.04);
+
+    }
+    @include desktop {
+        @include fonts (400, 30, 37, 0.04);
+    }
+}
+
+.footer-title {
+    margin-top: 16px;
+    @include fonts (700, 34, 41, 0.04);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    @include tablet {
+        margin-top: 9px;
+        width: 240px;
+        @include fonts (700, 48, 59, 0.06);
+    }
+    @include desktop {
+        margin-top: 14px;
+        width: 100%;
+        @include fonts (700, 58, 71, 0.06);
+    }
+}
+
+.footer-soc-contacts {
+    @include tablet {
+        margin-left: auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-bottom: 23px;
+    }
+    @include desktop {
+        padding-bottom: 8px;
+    }
+}
+
+.footer-soc {
+    display: flex;
+    margin-top: 42px;
+    @include tablet {
+        margin-top: 68px;
+    }
+}
+.footer-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-left: auto;
+}
+
+.footer-soc-link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    fill: var(--main-background-color);
+    transition: fill var(--main-transition);
+    &:hover {
+        fill: var(--secondary-text-color);
+        width: 32px;
+        height: 32px;
+    }
+    &:focus {
+        fill: var(--secondary-text-color);
+        width: 35px;
+        height: 35px;
+    }
+    @include tablet {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+.footer-soc-github {
+    @include tablet {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.footer-soc-telegram {
+    @include tablet {
+        width: 20px;
+        height: 16px;
+    }
+}
+
+.footer-soc-facebook {
+    @include tablet {
+        width: 9px;
+        height: 20px;
+    }
+}
+
+.footer-contacts {
+@include fonts (700, 12, 22, 0);
+margin-top: 38px;
+text-align: right;
+color: var(--primary-text-color);
+@include tablet {
+    margin-top: 32px;
+    @include fonts (700, 14, 22, 0);
+}
+@include desktop {
+    @include fonts (700, 16, 22, 0.02);
+
+}
+}
+
+.footer-contacts-tel {
+    color: var(--secondary-text-color);
+}
+
+.footer-rights {
+    margin-top: 40px;
+    border-top: 1px solid #E1E1E1;
+    padding-top: 16px;
+    padding-left: -20px;
+    padding-right: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    @include fonts (700, 14, 21, 0);
+    text-align: center;
+    color: #7A7A7A;
+
+@include tablet {
+    margin-top: 32px;
+    @include fonts (700, 14, 26, 0.02);
+
+   .footer-br {
+    display: none;
+   }
+}
+
+@include desktop {
+    @include fonts (700, 12, 22, 0.02);
+    margin-top: 54px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+}

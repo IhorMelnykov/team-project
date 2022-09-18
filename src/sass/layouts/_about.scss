@@ -3,21 +3,30 @@
 
   position: relative;
 
-  &__wrapper {
+  &__wrap {
     outline: 1px solid yellow;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include tablet {
+      padding-right: 34px;
+      padding-left: 34px;
+    }
   }
 
   &__pre-title {
-    @include font(700, 18, 1.22, null);
+    @include fonts(700, 18, 22);
 
     text-align: center;
     text-transform: uppercase;
 
     color: var(--secondary-text-color);
+
+    @include tablet {
+      @include fonts(800, 22, 27, 0.04);
+    }
   }
 
   &__title {
@@ -25,15 +34,21 @@
     width: 200px;
 
     font-family: 'Seymour One';
-    @include font(400, 30px, 1.27, 0.04em);
+    @include fonts(400, 30, 38, 0.04);
 
     text-align: center;
     text-transform: uppercase;
 
     color: var(--secondary-text-color);
+
+    @include tablet {
+      width: 100%;
+
+      @include fonts(400, 34, 43, 0.06);
+    }
   }
 
-  // .about__image-wrapper {
+  // .about__image-wrap {
   //   outline: 1px solid green;
   //   width: 100%;
   // }
@@ -49,39 +64,82 @@
     border-radius: 50%;
     box-shadow: 0px 4.48583px 16.8218px rgb(153 114 23 / 25%);
 
+    @include tablet {
+      left: 34px;
+    }
+
     // @media screen and (min-width: 768px) {
     //   width: 331px;
     // }
   }
 
-  &__text-wrapper {
-    width: 220px;
+  &__content-wrap {
     margin-top: 370px;
+
+    @include tablet {
+      margin-top: 79px;
+      margin-left: auto;
+    }
+  }
+
+  &__text-wrap {
     display: flex;
     flex-direction: column;
     gap: 4px;
+
+    width: 220px;
+
+    text-align: center;
+
+    @include tablet {
+      width: 336px;
+      margin-left: auto;
+      gap: 8px;
+
+      text-align: start;
+    }
   }
 
   &__text {
-    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.76;
 
     color: var(--secondary-text-color);
+
+    @include tablet {
+    }
   }
 
-  &__text:nth-child(1) {
-    @include font(null, 12px, 1.76, 0.04em);
-  }
+  // &__text:nth-child(1) {
+  // }
 
   &__text:nth-child(2) {
-    margin-top: 4px;
+    line-height: 1.62;
 
-    @include font(null, 12px, 1.62, null);
+    @include tablet {
+      line-height: 1.76;
+    }
   }
 
   &__text:nth-child(3) {
-    margin-top: 4px;
+    line-height: 1.94;
 
-    @include font(null, 12px, 1.62, null);
+    // @include fonts(null, null, 23, null);
+
+    @media screen and (max-width: 767.5px) {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
   }
 }
 

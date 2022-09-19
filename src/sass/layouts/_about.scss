@@ -1,0 +1,69 @@
+.about {
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__pre-title {
+    @include fonts(700, 18, 22);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+  }
+
+  &__title {
+    margin-top: 12px;
+    width: 200px;
+    font-family: 'Seymour One';
+    @include fonts(400, 30, 38, 0.04);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+  }
+
+  &__image {
+    position: absolute;
+    top: 240px;
+    left: 20px;
+  }
+
+  &__text-wrapper {
+    width: 220px;
+    margin-top: 370px;
+  }
+
+  &__text {
+    text-align: center;
+
+    color: var(--secondary-text-color);
+  }
+
+  &__text:nth-child(1) {
+    @include fonts(null, 12, 21, 0.04);
+  }
+  &__text:nth-child(2) {
+    @include fonts(null, 12, 19);
+  }
+  &__text:nth-child(3) {
+    @include fonts(null, 12, 23, 0.04);
+  }
+}
+
+.read-btn {
+  width: 164px;
+  margin-top: 20px;
+  transition: color var(--main-transition),
+    background-color var(--main-transition);
+}
+
+.read-btn__icon {
+  transition: fill var(--main-transition);
+
+  .read-btn:hover &,
+  .read-btn:focus & {
+    fill: var(--secondary-text-color);
+  }
+}

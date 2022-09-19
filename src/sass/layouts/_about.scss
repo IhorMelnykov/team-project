@@ -1,10 +1,6 @@
 .about {
-  outline: 1px solid orange;
-
-  position: relative;
-
   &__wrap {
-    outline: 1px solid yellow;
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -14,12 +10,15 @@
       padding-right: 34px;
       padding-left: 34px;
     }
+
+    @include desktop {
+      padding: 0 120px 102px 34px;
+    }
   }
 
   &__pre-title {
     @include fonts(700, 18, 22);
 
-    text-align: center;
     text-transform: uppercase;
 
     color: var(--secondary-text-color);
@@ -27,57 +26,87 @@
     @include tablet {
       @include fonts(800, 22, 27, 0.04);
     }
+
+    @include desktop {
+      @include fonts(null, 30, 37, 0.04);
+    }
   }
 
   &__title {
     margin-top: 12px;
-    width: 200px;
 
     font-family: 'Seymour One';
     @include fonts(400, 30, 38, 0.04);
 
-    text-align: center;
     text-transform: uppercase;
 
     color: var(--secondary-text-color);
 
-    @include tablet {
-      width: 100%;
+    @media screen and (max-width: 479.5px) {
+      width: 200px;
 
-      @include fonts(400, 34, 43, 0.06);
+      text-align: center;
+    }
+
+    @include tablet {
+      @include fonts(null, 34, 43, 0.06);
+    }
+
+    @include desktop {
+      @include fonts(null, 36, 45);
     }
   }
 
-  // .about__image-wrap {
-  //   outline: 1px solid green;
-  //   width: 100%;
-  // }
-
   &__image {
-    outline: 1px solid red;
     position: absolute;
-    top: 243px;
-    left: 50%;
-
-    transform: translateX(-50%);
 
     border-radius: 50%;
     box-shadow: 0px 4.48583px 16.8218px rgb(153 114 23 / 25%);
 
-    @include tablet {
-      left: 34px;
+    @media screen and (max-width: 767.5px) {
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+    @media screen and (max-width: 479.5px) {
+      top: 180px;
     }
 
-    // @media screen and (min-width: 768px) {
-    //   width: 331px;
-    // }
+    @include mobile {
+      top: 100px;
+    }
+
+    @include tablet {
+      top: 149px;
+      left: 35px;
+    }
+
+    @include desktop {
+      top: 170px;
+      left: 16px;
+    }
   }
 
   &__content-wrap {
     margin-top: 370px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 767.5px) {
+      align-items: center;
+    }
+
+    @include mobile {
+      margin-top: 360px;
+    }
 
     @include tablet {
       margin-top: 79px;
+      margin-left: auto;
+    }
+
+    @include desktop {
+      margin-top: 172px;
       margin-left: auto;
     }
   }
@@ -91,29 +120,37 @@
 
     text-align: center;
 
+    @include mobile {
+      width: 440px;
+    }
+
     @include tablet {
-      width: 336px;
+      width: 335px;
       margin-left: auto;
       gap: 8px;
 
       text-align: start;
     }
-  }
 
-  &__text {
-    font-weight: 400;
-    font-size: 12px;
-    letter-spacing: 0.04em;
-    line-height: 1.76;
-
-    color: var(--secondary-text-color);
-
-    @include tablet {
+    @include desktop {
+      width: 463px;
     }
   }
 
-  // &__text:nth-child(1) {
-  // }
+  &__text {
+    @include fonts(400, 12, 21, 0.04);
+    color: var(--secondary-text-color);
+
+    @include desktop {
+      @include fonts(null, 14, 27, 0.04);
+    }
+  }
+
+  &__text:nth-child(1) {
+    @include desktop {
+      @include fonts(null, 16, 28, 0.04);
+    }
+  }
 
   &__text:nth-child(2) {
     line-height: 1.62;
@@ -121,12 +158,13 @@
     @include tablet {
       line-height: 1.76;
     }
+    @include desktop {
+      line-height: 1.94;
+    }
   }
 
   &__text:nth-child(3) {
     line-height: 1.94;
-
-    // @include fonts(null, null, 23, null);
 
     @media screen and (max-width: 767.5px) {
       position: absolute;
@@ -140,20 +178,28 @@
       clip-path: inset(50%);
       margin: -1px;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+      width: 255px;
+    }
   }
 }
 
 .read-btn {
   width: 164px;
   margin-top: 20px;
-  transition: color var(--main-transition),
-    background-color var(--main-transition);
+
+  // transition: color var(--main-transition),
+  //   background-color var(--main-transition);
+
+  @include tablet {
+    margin-top: 50px;
+  }
 }
 
 .read-btn__icon {
   transition: fill var(--main-transition);
 
-  .read-btn:hover &,
   .read-btn:focus & {
     fill: var(--secondary-text-color);
   }

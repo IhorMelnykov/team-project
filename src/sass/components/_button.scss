@@ -8,6 +8,9 @@
 
   font-family: inherit;
   font-weight: 600;
+
+  transition: color var(--main-transition), border-color var(--main-transition),
+    background-color var(--main-transition);
 }
 
 .button:hover,

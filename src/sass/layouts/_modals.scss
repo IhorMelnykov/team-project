@@ -105,38 +105,85 @@
      gap: 84px;
 
      @media screen and (min-width:768px) {
-
          margin-bottom: 40px;
          gap: 30px;
      }
  }
 
  .mod-buy-now_item {
-     display: flex;
- }
-
- .mod-buy-now_wrap {
-     position: relative;
+    position: relative;
+    width: 132px;
+    height: 136px;
  }
 
  .mod-buy-now_label {
-     // width:132px;
-     // height: 136px;
-     // border: 2px solid #96AF8C;
-     //     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-     //     border-radius: 15.7808px;
      cursor: pointer;
  }
 
- .mod-buy-now_label-span {
-     position: absolute;
-     bottom: 20px;
-     left: 24px;
-     // margin-top: 96px;
-     @include fonts (700, 16, 20, 0.04);
-     color: var(--primary-text-color);
-     text-align: center;
+ .mod-buy-now_label-span-cream {
+    position: absolute;
+    width: 132px;
+    height: 136px;
+    padding-top: 96px;
+    @include fonts (700, 16, 20, 0.04);
+    color: var(--primary-text-color);
+    text-align: center;
+    border: 2px solid #96AF8C;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15.7808px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        .mod-buy-now_input:checked + & {
+            border: 2px solid #96AF8C;
+            box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+            background-color: #96AF8C;
+        }
  }
+ 
+  .mod-buy-now_label-span-coffee {
+      position: absolute;
+      width: 132px;
+      height: 136px;
+      padding-top: 96px;
+      @include fonts (700, 16, 20, 0.04);
+      color: var(--primary-text-color);
+      text-align: center;
+      border: 2px solid #EFD478;
+      filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+      border-radius: 15.7808px;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      .mod-buy-now_input:checked+& {
+          border: 2px solid #EFD478;
+          box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+          background-color: #EFD478;
+      }
+  }
+   .mod-buy-now_label-span-milk {
+       position: absolute;
+       width: 132px;
+       height: 136px;
+       padding-top: 96px;
+       @include fonts (700, 16, 20, 0.04);
+       color: var(--primary-text-color);
+       text-align: center;
+       border: 2px solid #D6936D;
+       filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+       border-radius: 15.7808px;
+       cursor: pointer;
+       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+           fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+       .mod-buy-now_input:checked+& {
+           border: 2px solid #D6936D;
+           box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+           background-color: #D6936D;
+       }
+   }
 
  .mod-buy-now_input {
      position: absolute;
@@ -153,30 +200,43 @@
      //     margin: -1px;
  }
 
- .mod-buy-now_icon {
-     width: 132px;
-     height: 136px;
-     border: 2px solid #96AF8C;
-     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-     border-radius: 15.7808px;
-     cursor: pointer;
-     fill: currentColor;
-
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-     .mod-buy-now_input:checked & {
-         border: 2px solid #EFD478;
-         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-         border-radius: 15.7808px;
-     }
+ .mod-buy-now_img {
+     position: absolute;
+     top: -73px;
+     left: 0;
+     width: 110%;
  }
 
- .mod-buy-now_img {
+ .mod-elipse-cream {
      position: absolute;
      top: -66px;
      left: 0;
-     width: 110%;
+     width: 132px;
+     height: 132px;
+     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+     border-radius: 50%;
+ }
+
+ .mod-elipse-coffee {
+    position: absolute;
+        top: -66px;
+        left: 0;
+        width: 132px;
+        height: 132px;
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+        border-radius: 50%;
+ }
+ .mod-elipse-milk {
+     position: absolute;
+     top: -66px;
+     left: 0;
+     width: 132px;
+     height: 132px;
+     background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+     border-radius: 50%;
  }
 
  .modal-form {
@@ -188,7 +248,6 @@
 
      @media screen and (min-width:768px) {
          gap: 16px;
-
      }
  }
 
@@ -218,7 +277,7 @@
      }
 
      &:invalid {
-         border-color: red;
+        border-color: #ff0000;
      }
 
      @media screen and (min-width:768px) {
@@ -273,6 +332,10 @@
          @include fonts (600, 14, 17, 0);
          margin-top: 32px;
      }
+     &:hover {
+            background: var(--button-focus-color);
+            color: var(--secondary-text-color);
+         }
  }
 
  // modal-ingredients ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -300,7 +363,6 @@
          padding: 32px 40px;
          width: 568px;
          height: 995px;
-
      }
  }
 
@@ -329,7 +391,6 @@
          margin: 0 auto;
          margin-bottom: 22px;
          width: auto;
-
      }
  }
 
@@ -339,11 +400,56 @@
  }
 
  .mod-ingredients_item {
+     position: relative;
      width: 53px;
      height: 72px;
      border: 2px solid #9CBE8F;
      border-radius: 40px;
      text-align: center;
+     @media screen and (min-width:768px) {
+        width: 65px;
+        height: 90px;
+    }
+ }
+
+
+ .ingredients-icon_meaning {
+    position: absolute;
+    top: -2;
+    left: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #9CBE8F;
+    border: 2px solid #9CBE8F;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+    @include fonts (500, 10, 28, 0);
+        text-align: center;
+        color: var(--primary-text-color);
+    
+    @media screen and (min-width:768px) {
+         @include fonts (500, 12, 28, 0);
+        top: -2;
+        left: 5;
+        width: 53px;
+        height: 53px;
+        }
+ }
+
+ .ingredients-icon_text {
+    padding-top: 52px;
+    @include fonts (400, 10, 12, 0);
+    text-align: center;
+    color: var(--primary-text-color);
+
+    @media screen and (min-width:768px) {
+            @include fonts (400, 12, 15, 0);
+            padding-top: 61px;
+        }
  }
 
  .mod-ingredients_list {
@@ -396,6 +502,10 @@
          background: #F8D24E;
          border-radius: 10px;
          border: none;
+         &:hover {
+            background: var(--button-focus-color);
+            color: var(--secondary-text-color);
+         }
      }
 
      // modal-How its made ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -518,7 +628,6 @@
              height: 260px;
              margin-bottom: 32px;
          }
-
      }
 
      .mod-lacations_button {
@@ -536,6 +645,10 @@
          @media screen and (min-width:768px) {
              @include fonts (600, 14, 17, 0);
          }
+         &:hover {
+            background: var(--button-focus-color);
+            color: var(--secondary-text-color);
+         }
      }
 
      // Franchise modal  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -552,7 +665,6 @@
          background: var(--secondary-text-color);
          border: 2px solid #F8D24E;
          border-radius: 10px;
-
          // transform: translate(-50%, -50%) scale(1);
          transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -612,5 +724,10 @@
          @media screen and (min-width:768px) {
              @include fonts (400, 16, 17, 0);
              margin: 0 auto;
+         }
+
+         &:hover {
+            background: var(--button-focus-color);
+            color: var(--secondary-text-color);
          }
      }

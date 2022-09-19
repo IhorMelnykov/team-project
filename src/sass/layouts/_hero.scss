@@ -1,7 +1,5 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
-    background-image: var(--main-background-color),
-      url(/src/images/hero-image/mobile-fon.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -83,6 +81,7 @@
   }
 
   .hero-part {
+    background-image: url(/src/images/hero-image/mobile-fon.png);
     margin-top: 31.55px;
     margin-left: 82px;
     margin-right: 81px;

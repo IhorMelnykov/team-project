@@ -31,7 +31,6 @@
 .header-nav {
   display: none;
   @media screen and (min-width: 768px) {
-      max-width: 768px;
       display: none;
   }
   @media screen and (min-width: 1200px) {
@@ -44,17 +43,22 @@
 .header-nav-list {
   display: flex;
   gap: 50px;
-  color: var(--secondary-text-color);
-   
+  cursor: pointer;   
 }
 .header-nav-item {
-  @include font (700, 32px, 1.22, 0.03em);
+  @include font (700, 32px, 1.22, 0.03em);  
+  color: var(--secondary-text-color);
     @media screen and (min-width: 768px) {
     @include font (700, 48px, 1.22, 0.03em);
 }
   @media screen and (min-width: 1200px) {
     @include font (700, 16px, 1.25, 0.03em);
+    cursor: pointer;
 }    
+}
+
+.header-nav-item:hover {
+  color: var(--accent-color);
 }
 
 .header-button {
@@ -157,6 +161,8 @@ right: 32px;
 .mob-menu-nav {
   display: block;
   margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 768px) {
       display: block;
       margin-top: 140px;
@@ -173,6 +179,7 @@ right: 32px;
   color: var(--secondary-text-color);
   @include font (700, 32px, 1.2, 0.03em);
   align-items: center;
+  cursor: pointer;
   @media screen and (min-width: 768px) {
     gap: 40px;    
     @include font (700, 40px, 1.47, 0.03em);
@@ -182,6 +189,9 @@ right: 32px;
   }    
 }
 
+.mob-menu-nav-list:hover {
+  color: var(--primary-text-color);
+}
 
 .mob-menu-buy {
   font-family: 'Roboto';
@@ -195,6 +205,7 @@ right: 32px;
   height: 42px;
   align-items: center;
   justify-content: center;
+
   position: absolute;
   left: 164px;
   bottom: 63px;
@@ -205,6 +216,7 @@ right: 32px;
     display: none;
   }   
 }
+
 
 .mob-menu-mobile {
   fill: var( --accent-color);

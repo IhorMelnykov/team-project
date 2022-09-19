@@ -171,7 +171,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header-nav {
-    max-width: 768px;
     display: none;
   }
 }
@@ -187,7 +186,7 @@ body {
 .header-nav-list {
   display: flex;
   gap: 50px;
-  color: var(--secondary-text-color);
+  cursor: pointer;
 }
 
 .header-nav-item {
@@ -195,6 +194,7 @@ body {
   font-size: 32px;
   line-height: 1.22;
   letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
 @media screen and (min-width: 768px) {
   .header-nav-item {
@@ -210,7 +210,12 @@ body {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
+    cursor: pointer;
   }
+}
+
+.header-nav-item:hover {
+  color: var(--accent-color);
 }
 
 .header-button {
@@ -318,6 +323,8 @@ body {
 .mob-menu-nav {
   display: block;
   margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .mob-menu-nav {
@@ -341,6 +348,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   align-items: center;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .mob-menu-nav-list {
@@ -351,6 +359,10 @@ body {
     letter-spacing: 0.03em;
   }
 }
+.mob-menu-nav-list:hover {
+  color: var(--primary-text-color);
+}
+
 .mob-menu-buy {
   font-family: "Roboto";
   font-style: normal;

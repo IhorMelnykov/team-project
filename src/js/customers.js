@@ -3,8 +3,11 @@ $(document).ready(function(){
 //console.log("HEY");
   $('.customer-list').slick({
     infinite: true,
+    arrows: false,
+    dots: true,
     slidesToShow: 1,
     slidesToScroll: 1
+    
   });
 
 });

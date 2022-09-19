@@ -76,13 +76,26 @@ height: 138px;
         font-size: 16px;
         }
     }
-    // .customer-subtitle::after {
-    //     content:'';
-    //     height: 12px;
-    //     width: 12px;
-    //     left: 564px;
-    //     top: 3756px;
-    //     border-radius:50%;
-    //     color: #b83b3b; 
-    // }
+
+    .slick-slider {
+     position: relative;
+    }
+
+    .slick-dots li{
+        scale: 200%;
+        // size: 30px;
+        bottom: 75px;
+      }
+
+     
+
+.slick-dots button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    
+}
           

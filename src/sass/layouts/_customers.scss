@@ -1,101 +1,95 @@
 .customer-item {
-    background-color:var(--primary-text-color);
-    width: 100%;
-    background-image:
-    url(../images/background.jpg);
+  background-color: var(--primary-text-color);
+  width: 100%;
+  background-image: url(../images/background.jpg);
   background-position: center;
   background-repeat: repeat;
-  background-size:cover;
+  background-size: cover;
   padding-top: 75px;
   padding-bottom: 74px;
   @include tablet {
-  padding-top: 55px;
-  padding-bottom: 80px;
+    padding-top: 55px;
+    padding-bottom: 80px;
   }
   @include desktop {
-  padding-top: 123px;
-  padding-bottom: 144px;
+    padding-top: 123px;
+    padding-bottom: 144px;
   }
 }
 .customer-img {
-    border-radius: 50%;
-    margin-top: 181px;
-    margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto;
+  border-radius: 50%;
+  margin-top: 181px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .customer-review {
-    color: #FCFCFC;
-    border: 1px;
-    padding-left: 34px;
-    padding-right: 34px;
-    padding-top: 39px;
-    padding-bottom: 39px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 2.5;
-    @include tablet {
-        font-size: 14px;
-    }
-    @include desktop {
-        font-size: 16px;
-        padding-left: 109px;
-        padding-right: 109px;
-    }
+  color: #fcfcfc;
+  border: 1px;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 2.5;
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+    padding-left: 109px;
+    padding-right: 109px;
+  }
 }
 .review-container {
-    display: flex;
-align-items: center;
-width: 280px;
-height: 256.06px;
-background-color: var(--main-background-color);
-border-radius: 7.41px;
-margin-left: auto;
-margin-right: auto;
-@include tablet {
-width: 705px;
-height: 138px;
-}
-@include desktop {
-width: 968px;
-height: 138px;
-
-}
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 256.06px;
+  background-color: var(--main-background-color);
+  border-radius: 7.41px;
+  margin-left: auto;
+  margin-right: auto;
+  @include tablet {
+    width: 705px;
+    height: 138px;
+  }
+  @include desktop {
+    width: 968px;
+    height: 138px;
+  }
 }
 
 .customer-subtitle {
-    font-weight: 500;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 20px;
-    line-height: 1.86;
-    @include tablet {
-        font-size: 16px;
-    }
-    @include desktop {
-        font-size: 16px;
-        }
-    }
+  font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.86;
+  @include tablet {
+    font-size: 16px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
+}
 
-    .slick-slider {
-     position: relative;
-    }
+.slick-slider {
+  position: relative;
+}
 
-    .slick-dots li{
-        scale: 200%;
-        // size: 30px;
-        bottom: 75px;
-      }
-
-     
+.slick-dots li {
+  scale: 200%;
+  // size: 30px;
+  bottom: 75px;
+}
 
 .slick-dots button {
-    display: block;
-    width: 16px;
-    height: 16px;
-    padding: 0;
-    border: 0;
-    border-radius: 50%;
-    
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
 }
-          

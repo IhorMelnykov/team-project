@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .hero {
     background-image: url(/src/images/hero-image/mobile-fon.png);
     background-repeat: no-repeat;
@@ -173,8 +173,8 @@
     margin-top: 270px;
     margin-bottom: 65px;
 
-    &__image {
-    }
+    // &__image {
+    // }
 
     &__text {
       position: absolute;
@@ -282,8 +282,8 @@
     margin-top: 474px;
     margin-bottom: 65px;
 
-    &__image {
-    }
+    // &__image {
+    // }
 
     &__text {
       position: absolute;

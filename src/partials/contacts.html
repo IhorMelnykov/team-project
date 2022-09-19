@@ -1,11 +1,11 @@
 <section class="section contacts">
   <div class="container">
-    <h2 class="contacts-title">Contacts</h2>
+    <h2 class="contacts-title visually-hidden">Contacts</h2>
     <ul class="contacts-list list">
       <li class="contacts-item">
         <p class="contacts-category">Cafe</p>
         <p class="contacts-city">Chicago</p>
-        <adress>
+        <adress class="adress">
           <a
             class="contacts-adress"
             href="https://goo.gl/maps/64suJAsPu7XT"
@@ -38,9 +38,9 @@
         </ul>
       </li>
       <li class="contacts-item">
-        <p class="contacts-category">Food truck</p>
+        <p class="contacts-category truck">Food truck</p>
         <p class="contacts-city">Los Angeles</p>
-        <adress>
+        <adress class="adress">
           <a
             class="contacts-adress"
             href="https://goo.gl/maps/xo37eKbRhdYv4fX5A"
@@ -75,7 +75,7 @@
       <li class="contacts-item">
         <p class="contacts-category">Cafe</p>
         <p class="contacts-city">New York</p>
-        <adress>
+        <adress class="adress">
           <a
             class="contacts-adress"
             href="https://goo.gl/maps/KF1eVvvXSEx8WE2K6"
@@ -108,12 +108,13 @@
         </ul>
       </li>
     </ul>
-    <button type="button">Our Locations
+    <div class="btn-wrap">
+    <button type="button" class="button btn-location">Our Locations
       <svg class="contacts-icon" width="12" height="12">
 									<use href="./images/icons.svg#icon-arrow-button"></use>
 								</svg>
     </button>
-    <button type="button">Franchise
+    <button type="button" class="button btn-franchise">Franchise
       <svg class="contacts-icon" width="12" height="12">
 									<use href="./images/icons.svg#icon-arrow-button"></use>
 								</svg></button>

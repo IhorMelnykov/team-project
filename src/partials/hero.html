@@ -1,0 +1,103 @@
+ <section class="hero">
+        <div class="container">
+          <div class="hero-section">
+            <h1 class="hero-title">ice cream made with passion</h1>
+            <ul class="hero-set">
+              <li class="hero-set__btn">
+                <button class="hero-button" type="button">Products</button>
+              </li>
+              <li class="hero-set__btn">
+                <button class="hero-btn" type="button">How it’s made?</button>
+              </li>
+            </ul>
+          </div>
+          <div class="hero-list">
+            <picture>
+              <source
+                srcset="
+                  ./images/hero-image/plate-ice-cream.png    1x,
+                  ./images/hero-image/plate-ice-cream@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/hero-image/plate-ice-cream.png    1x,
+                  ./images/hero-image/plate-ice-cream@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/hero-image/plate-ice-cream.png    1x,
+                  ./images/hero-image/plate-ice-cream@2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="hero-list__image"
+                src="./images/hero-image/plate-ice-cream.png"
+                alt="plate-ice-cream"
+                width="225"
+                height="225"
+              />
+            </picture>
+          </div>
+          <div>
+            <ul class="hero-additions">
+              <li class="hero-additions__title">
+                <p class="hero-list__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et
+                </p>
+              </li>
+              <li class="hero-additions__title">
+                <svg class="hero-icon" width="40" height="40">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-part">
+            <picture>
+              <source
+                srcset="
+                  ./images/hero-image/ice-cream.png    1x,
+                  ./images/hero-image/ice-cream@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/hero-image/ice-cream.png    1x,
+                  ./images/hero-image/ice-cream@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/hero-image/ice-cream.png    1x,
+                  ./images/hero-image/ice-cream@2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="hero-part__image"
+                src="./images/hero-image/ice-cream.png"
+                alt="big-ice-cream"
+                width="447"
+                height="561"
+              />
+            </picture>
+          </div>
+          <div class="hero-numbers">
+            <ul>
+              <li><h2 class="hero-numbers__one">16</h2></li>
+              <li><p class="hero-numbers__text">cafes</p></li>
+              <li><h2 class="hero-numbers__two">23</h2></li>
+              <li><p class="hero-numbers__text">food trucks</p></li>
+            </ul>
+          </div>
+        </div>
+      </section>

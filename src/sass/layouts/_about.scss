@@ -20,7 +20,6 @@
     @include fonts(700, 18, 22);
 
     text-transform: uppercase;
-
     color: var(--secondary-text-color);
 
     @include tablet {
@@ -39,7 +38,6 @@
     @include fonts(400, 30, 38, 0.04);
 
     text-transform: uppercase;
-
     color: var(--secondary-text-color);
 
     @media screen and (max-width: 479.5px) {

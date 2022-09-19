@@ -1,0 +1,329 @@
+<!-- Modal Buy now -->
+<div class="backdrop">
+  <div class="mod-buy-now">
+    <button type="button" class="close-modal_button">
+      <svg class="close-modal_icon">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button> 
+    <h2 class="mod-buy-now_title">Buy now</h2>
+    <form class="form-modal">
+      <ul class="mod-buy-now_list">
+        <li class="mod-buy-now_item">
+            <label for="ice_cream" class="mod-buy-now_label">
+              <input 
+                type="checkbox"
+                id="ice_cream"
+                name="buy-now"
+                value="true"
+                class="mod-buy-now_input"/>
+            <span class="mod-buy-now_label-span-cream">ice cream</span>
+            <span class="mod-elipse-cream"></span>
+              <img
+                class="mod-buy-now_img"
+                srcset="
+                  ./images/mod-icecream-1x.png 1x,
+                  ./images/mod-icecream-2x.png 2x"
+                src="./images/mod-icecream-1x.png"
+                alt="ice cream"
+                width="132"
+                height="139"/>
+            </label>
+        </li>
+        <li class="mod-buy-now_item">
+            <label for="ice_coffee" class="mod-buy-now_label">
+              <input
+                type="checkbox"
+                id="ice_coffee"
+                name="buy-now"
+                class="mod-buy-now_input"
+              /> 
+            <span class="mod-buy-now_label-span-coffee">ice coffee</span>
+            <span class="mod-elipse-coffee"></span>
+              <img
+                class="mod-buy-now_img"
+                srcset="
+                  ./images/mod-icecoffee-1x.png 1x,
+                  ./images/mod-icecoffee-2x.png 2x"
+                src="./images/mod-icecoffee-1x.png"
+                alt="ice coffee"
+                width="132" 
+                height="139"/>
+            </label> 
+        </li>
+        <li class="mod-buy-now_item">
+            <label for="milkshake" class="mod-buy-now_label">
+              <input
+                type="checkbox"
+                id="milkshake"
+                name="buy-now"
+                class="mod-buy-now_input"
+              />
+              <span class="mod-buy-now_label-span-milk">milkshake</span>
+              <span class="mod-elipse-milk"></span>
+              <img
+                class="mod-buy-now_img"
+                srcset="
+                  ./images/mod-milkshake-1x.png 1x,
+                  ./images/mod-milkshake-2x.png 2x"
+                src="./images/mod-milkshake-1x.png"
+                alt="milkshake"
+                width="132"
+                height="139"/>
+            </label>
+        </li>
+      </ul>
+      <div class="modal-form">
+        <label class="modal-form_label">
+          <input
+            type="text"
+            name="name"
+            placeholder="name"
+            pattern="[A-z]{1,15}"
+            title="Please use your name"
+            class="modal-form_input"
+          />
+        </label>
+
+        <label class="modal-form_label">
+          <input
+            type="tel"
+            name="tel"
+            placeholder="phone"
+            autofocus="autofocus"
+            pattern="[0-9]{0,12}"
+            title="Please use your phone"
+            class="modal-form_input"
+          />
+        </label>
+
+        <label class="modal-form_label">
+          <textarea
+            name="comment"
+            cols="30"
+            rows="10"
+            placeholder="comment"
+            title="Please use your comment"
+            minlength="3" 
+            maxlength="50"
+            class="modal-form_textarea"
+          ></textarea>
+        </label>
+      </div>
+
+      <button type="submit" class="mod-buy-now_button">Submit</button>
+    </form>
+  </div>
+</div>
+<!-- modal ingredients -->
+<div class="backdrop">
+  <div class="mod-ingredients">
+    <div class="mod-ingredients_wrap">
+      <button type="button" class="close-modal_button">
+        <svg class="close-modal_icon">
+          <use href="./images/icons.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+      <h2 class="mod-ingredients_title">Chololate icecream</h2>
+      <img
+        class="mod-ingredients_img"
+        srcset="
+          ./images/mod-ingredient-1x.png 1x,
+          ./images/mod-ingredient-2x.png 2x"
+        src="./images/mod-ingredient-1x.png"
+        alt="ice cream"
+        width="132"
+        height="139"/>    
+      <ul class="mod-ingredients_list">
+        <li class="mod-ingredients_item">
+          <p class="ingredients-icon_meaning">320</p>
+          <p class="ingredients-icon_text">kcal</p> 
+        </li>
+        <li class="mod-ingredients_item">
+            <p class="ingredients-icon_meaning">4g</p>
+          <p class="ingredients-icon_text">Prote</p>
+        </li> 
+        <li class="mod-ingredients_item">
+            <p class="ingredients-icon_meaning">8.2g</p>
+          <p class="ingredients-icon_text">Fats</p>
+        </li>
+        <li class="mod-ingredients_item">
+            <p class="ingredients-icon_meaning">40.4g</p>
+          <p class="ingredients-icon_text">Carbs</p>
+        </li>
+      </ul>
+      <h3 class="ingredients_title">Ingredients</h3>
+      <ul class="ingredients_list">
+        <li class="ingredients_item">
+          <p class="ingredients_text">Milk</p>
+          <p class="ingredients_text">100ml</p>
+        </li>
+        <li class="ingredients_item">
+          <p class="ingredients_text">Belgian chocolate</p>
+          <p class="ingredients_text">20g</p>
+        </li>
+        <li class="ingredients_item">
+          <p class="ingredients_text">Cream</p>
+          <p class="ingredients_text">150 ml</p>
+        </li>
+        <li class="ingredients_item">
+          <p class="ingredients_text">Cocoa powder</p>
+          <p class="ingredients_text">30g</p>
+        </li>
+        <li class="ingredients_item">
+          <p class="ingredients_text">Sugar</p>
+          <p class="ingredients_text">40g</p>
+        </li>
+        <li class="ingredients_item">
+          <p class="ingredients_text">Vanilla sugar</p>
+          <p class="ingredients_text">10g</p>
+        </li>
+      </ul>
+      <form class="modal-form">
+        <label class="modal-form_label">
+          <input
+            type="text"
+            name="name"
+            placeholder="name"
+            pattern="[A-z]{1,15}"
+            title="Please use your name"
+            class="modal-form_input"
+          />
+        </label>
+        <label class="modal-form_label">
+          <input
+            type="tel"
+            name="tel"
+            placeholder="phone"
+            pattern="[0-9]{0,12}"
+            title="Please use your phone"
+            class="modal-form_input"
+          />
+        </label>
+        <label class="modal-form_label">
+          <textarea
+            name="comment"
+            cols="30"
+            rows="10"
+            placeholder="comment"
+            title="Please use your comment"
+            minlength="3" 
+            maxlength="50"
+            class="modal-form_textarea"
+          ></textarea>
+        </label>
+        <button type="submit" class="mod-ingredients_button">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- modal How it’s made? -->
+<div class="backdrop">
+  <div class="mod-howitsmade">
+    <button type="button" class="close-modal_button">
+      <svg class="close-modal_icon">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="mod-howitsmade_title">How it’s made?</h2>
+    <iframe
+      width="224"
+      height="199"
+      src="https://www.youtube.com/embed/zagD0LQdsDE"
+      title="How it’s made?"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      class="mod-howitsmade_video">
+    </iframe>
+    <p class="mod-howitsmade_text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
+</div>
+<!-- modal Our Locations -->
+<div class="backdrop">
+  <div class="mod-lacations">
+    <button type="button" class="close-modal_button">
+      <svg class="close-modal_icon">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="mod-lacations_title">Our Locations</h2>
+    <a
+      href="https://goo.gl/maps/eVM5a4UHusVCzEKq7"
+      target="_blank"
+      rel = ”noreferrer”
+      class="mod-lacations_link"
+    >
+      <img
+        src="./images/map-location.png"
+        alt="map"
+        width="220"
+        height="199"
+        class="mod-lacations_img"
+    /></a>
+    <button type="button" class="mod-lacations_button">Open map</button>
+  </div>
+</div>
+<!-- Franchise modal -->
+<div class="backdrop">
+  <div class="mod-franchise">
+    <button type="button" class="close-modal_button">
+      <svg class="close-modal_icon">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="mod-franchise_title">
+      Thank you for your interest in owning an Ice Cream shop
+    </h2>
+    <p class="mod-franchise_text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="modal-form">
+      <label class="modal-form_label">
+        <input
+          type="text"
+          name="name"
+          placeholder="name"
+          pattern="[A-z]{1,15}"
+          title="Please use your name"
+          class="modal-form_input"
+        />
+      </label>  
+      <label class="modal-form_label">
+        <input
+          name="tel"
+          type="tel"
+          placeholder="phone"
+          pattern="[0-9]{0,12}"
+          title="Please use your phone"
+          class="modal-form_input"
+        />
+      </label>
+      <label class="modal-form_label">
+        <input name="email" type="email" placeholder="Email" 
+        title="Please use your email"
+        class="modal-form_input" />
+      </label>
+      <label class="modal-form_label">
+        <textarea
+          name="comment"
+          cols="30"
+          rows="10"
+          placeholder="comment"
+          title="Please use your comment"
+          minlength="3" 
+          maxlength="50"
+          class="modal-form_textarea"
+        ></textarea>
+      </label>
+      <button type="submit" class="mod-franchise_button">Submit</button>
+    </form>
+  </div>
+</div>

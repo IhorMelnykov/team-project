@@ -1,0 +1,224 @@
+.contacts {
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        gap: 20px;
+
+        @include tablet{
+            gap: 16px;
+        }
+
+                @include desktop {
+                    gap: 24px;
+                }
+ }
+    &-item{
+        width: 280px;
+        padding: 40px 32px;
+        @include fonts(500, 12, 22, 0.04);
+        background: var(--secondary-text-color);
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+
+        @include tablet{
+            padding: 40px 24px;
+            width: 224px;
+            
+            @include fonts(500, 14, 26, 0.04);
+        }
+                @include desktop{
+                    padding: 40px;
+                    width: 368px;
+                @include fonts(500, 16, 30, 0.04);
+                }
+    }
+
+    &-category {
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: auto;
+        height: 16px;
+        width: 80px;
+        @include fonts(500, 12, 22, 0.04);
+        display: flex;
+            align-items: center;
+            text-align: center;
+        
+        text-transform: uppercase;
+        color: var(--primary-text-color);
+        background: var(--accent-color);
+        border-radius: 6px;
+
+        @include tablet {
+            padding-left: 12px;
+                padding-right: 12px;
+            @include fonts(500, 16, 30, 0.04);
+            height: 28px;
+                width: 73px;
+            }
+                 @include desktop {
+                     @include fonts(500, 16, 30, 0.04);
+                 }
+                        
+
+                &.truck{
+                    padding-left: 10px;
+                        padding-right: 10px;
+            width: 130px;
+            @include tablet{
+                height: 28px;
+                width: 138px;
+            }
+        }
+    }
+
+    &-city{
+        margin-top: 20px;
+
+        @include tablet{
+            margin-top: 32px;
+        }
+                @include desktop {
+                    margin-top: 34px;
+                }
+
+            }
+}
+
+.adress{
+    margin-top: 8px;
+    display: block;
+
+    @include tablet {
+            margin-top: 12px;
+        }
+                @include desktop {
+                    margin-top: 8px;
+                }
+}
+
+.contacts-adress{
+    color: #D6936D;
+    text-decoration: none;
+
+    &:focus, &:hover{
+    text-decoration: underline;
+    }
+        
+}
+
+.schedule-list::before, .connection-list::before{
+    content: " ";
+    display: block;
+    width: 216px;
+    border: 1px solid #E1E1E1;
+    margin-top: 24px;
+
+    @include tablet {
+            margin-top: 26px;
+            width: 176px;
+        }
+                 @include desktop{
+                    margin-top: 32px;
+                    width: 288px;
+                 }
+
+}
+
+.schedule-item:last-child{
+    margin-top: 8px;
+
+    @include tablet {
+            margin-top: 12px;
+        }
+                
+}
+
+.schedule-item:first-child {
+    margin-top: 24px;
+
+    @include tablet {
+            margin-top: 26px;
+        }
+                @include desktop {
+                    margin-top: 32px;
+                }
+}
+
+.schedule-hours{
+    color: #ABABAB;
+}
+
+.connection-item:first-child{
+    margin-top: 24px;
+
+    @include tablet {
+            margin-top: 32px;
+        }
+}
+
+.connection-link{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    @include fonts(500, 12, 18, 0.04);
+
+    @include tablet{
+    @include fonts(500, 14, 26, 0.04);
+    }
+         @include desktop {
+             @include fonts(500, 16, 29, 0.04);
+         }
+}
+
+.btn-wrap{
+    margin-top: 32px;
+display: flex;
+flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    gap: 16px;
+    width: 164px;
+    margin-left: auto;
+        margin-right: auto;
+        @include tablet{
+            width: 408px;
+        }
+                @include desktop {
+                    width: 388px;
+                    gap: 0px;
+                    flex-wrap: nowrap;
+                }
+}
+
+.button.btn-location, .button.btn-franchise{
+
+    margin-top: 32px;
+    width: 196px;
+    transition: color var(--main-transition), background-color var(--main-transition);
+    
+    }
+
+.button.btn-franchise{
+    margin-top: 0px;
+    background-color: var(--main-background-color);
+    border: 2px solid var(--accent-color);
+    @include tablet {
+            margin-top: 32px;
+        }
+
+    &:hover{
+    border: 2px solid var(--button-focus-color);
+    }
+    &:focus{
+    border: 2px solid var(--button-focus-color);
+    color: var(--secondary-text-color);
+    }
+    &:disabled{
+    border: 2px solid #ABABAB;
+    }
+}

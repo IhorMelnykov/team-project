@@ -3,6 +3,8 @@
     background-image: url(../images/products-section/products-bg-min.png);
     background-size: 200%;
     padding-top: 60px;
+    padding-bottom: 60px;
+    
 }
 
 .products-label {
@@ -26,6 +28,8 @@ color: #131313;
     max-width: 320px;
     width: 100%;
 }
+
+
 
 .products-card-1 {
     margin-top: 148px;
@@ -150,16 +154,11 @@ position: relative;
 border-radius: 24px;
 }
 
-.products-modal-arrow {
-    
-    width: 40px;
-    height: 40px;
-}
 
 
 
 
-
+/*
 .products-button {
     background: transparent;
     border: none;
@@ -184,4 +183,4 @@ border-radius: 24px;
     .products-modal-arrow-hover {
         display: block;
     }
-}
+}*/

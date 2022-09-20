@@ -1,5 +1,13 @@
 .gallery {
   z-index: 1;
+  position: relative;
+  margin-bottom: -106px;
+  @include tablet {
+    margin-bottom: -163px;
+  }
+  @include desktop {
+    margin-bottom: -328px;
+  }
   &__image-wrap {
     position: relative;
     margin: 0 auto;

@@ -56,6 +56,7 @@
   }
 
   &__image {
+    outline: 1px solid red;
     position: absolute;
 
     border-radius: 50%;
@@ -187,8 +188,6 @@
   width: 164px;
   margin-top: 20px;
   font-size: 14px;
-  // transition: color var(--main-transition),
-  //   background-color var(--main-transition);
 
   @include tablet {
     margin-top: 50px;

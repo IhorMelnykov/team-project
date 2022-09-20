@@ -16,12 +16,16 @@
     }
   }
   &-item {
-    width: 280px;
+    width: 100%;
     padding: 40px 32px;
     @include fonts(500, 12, 22, 0.04);
     background: var(--secondary-text-color);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+
+    @include mobile{
+      width: 440px;
+    }
 
     @include tablet {
       padding: 40px 24px;

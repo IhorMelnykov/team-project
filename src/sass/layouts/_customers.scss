@@ -1,21 +1,23 @@
+.customers {
+background-image: url(/src/images/background.jpg);
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+}
 .customer-item {
-  background-color: var(--primary-text-color);
   width: 100%;
-  background-image: url(../images/background.jpg);
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  padding-top: 75px;
-  padding-bottom: 74px;
+  padding-top: 181px;
+  padding-bottom: 409px;
   @include tablet {
-    padding-top: 55px;
-    padding-bottom: 80px;
+    padding-top: 218px;
+    padding-bottom: 483px;
   }
   @include desktop {
-    padding-top: 123px;
-    padding-bottom: 144px;
+    padding-top: 451px;
+    padding-bottom: 240px;
   }
 }
+
 .customer-img {
   border-radius: 50%;
   margin-top: 181px;
@@ -51,6 +53,9 @@
   border-radius: 7.41px;
   margin-left: auto;
   margin-right: auto;
+  @include mobile {
+    width: 280px;
+  }
   @include tablet {
     width: 705px;
     height: 138px;
@@ -79,17 +84,65 @@
   position: relative;
 }
 
+
+.slick-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+  
+}
 .slick-dots li {
-  scale: 200%;
-  // size: 30px;
-  bottom: 75px;
+  width: 0;
+  height: 0;
+  bottom: 405px;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+  
+  @include tablet {
+    bottom: 480px;
+  }
+  @include desktop {
+    bottom: 240px;
+  }
+  }
+
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background: transparent;
+    
 }
 
-.slick-dots button {
-  display: block;
-  width: 16px;
-  height: 16px;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 12px;
+    line-height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    content: '•';
+    text-align: center;
+    opacity: .15;
+    fill: #84A178;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #84A178;
 }

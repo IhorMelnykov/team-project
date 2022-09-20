@@ -23,7 +23,7 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
-    @include mobile{
+    @include mobile {
       width: 440px;
     }
 
@@ -123,7 +123,6 @@
   &:focus,
   &:hover {
     text-decoration: underline;
-    cursor: pointer;
   }
 }
 
@@ -213,7 +212,6 @@
 
 .button.btn-location,
 .button.btn-franchise {
-  // margin-top: 32px;
   width: 196px;
   transition: color var(--main-transition), border var(--main-transition);
 }
@@ -231,9 +229,6 @@
   margin-top: 0px;
   background-color: var(--main-background-color);
   border: 2px solid var(--accent-color);
-  @include tablet {
-    // margin-top: 32px;
-  }
 
   &:hover {
     border: 2px solid var(--button-focus-color);

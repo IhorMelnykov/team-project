@@ -1,113 +1,63 @@
 <!-- Modal Buy now -->
-<div class="backdrop">
-  <div class="mod-buy-now">
-    <button type="button" class="close-modal_button">
+<div class="overlay js-overlay-modal"></div>
+<div class="overlay js-overlay-modal">
+  <div class="mod-buy-now modal" data-modal="1">
+    <button type="button" class="close-modal_button js-modal-close">
       <svg class="close-modal_icon">
         <use href="./images/icons.svg#icon-modal-close"></use>
       </svg>
-    </button> 
+    </button>
     <h2 class="mod-buy-now_title">Buy now</h2>
     <form class="form-modal">
       <ul class="mod-buy-now_list">
         <li class="mod-buy-now_item">
-            <label for="ice_cream" class="mod-buy-now_label">
-              <input 
-                type="checkbox"
-                id="ice_cream"
-                name="buy-now"
-                value="true"
-                class="mod-buy-now_input"/>
+          <label for="ice_cream" class="mod-buy-now_label">
+            <input type="checkbox" id="ice_cream" name="buy-now" value="true" class="mod-buy-now_input" />
             <span class="mod-buy-now_label-span-cream">ice cream</span>
             <span class="mod-elipse-cream"></span>
-              <img
-                class="mod-buy-now_img"
-                srcset="
-                  ./images/mod-icecream-1x.png 1x,
-                  ./images/mod-icecream-2x.png 2x"
-                src="./images/mod-icecream-1x.png"
-                alt="ice cream"
-                width="132"
-                height="139"/>
-            </label>
+            <img class="mod-buy-now_img" srcset="
+                      ./images/mod-icecream-1x.png 1x,
+                      ./images/mod-icecream-2x.png 2x" src="./images/mod-icecream-1x.png" alt="ice cream" width="132"
+              height="139" />
+          </label>
         </li>
         <li class="mod-buy-now_item">
-            <label for="ice_coffee" class="mod-buy-now_label">
-              <input
-                type="checkbox"
-                id="ice_coffee"
-                name="buy-now"
-                class="mod-buy-now_input"
-              /> 
+          <label for="ice_coffee" class="mod-buy-now_label">
+            <input type="checkbox" id="ice_coffee" name="buy-now" class="mod-buy-now_input" />
             <span class="mod-buy-now_label-span-coffee">ice coffee</span>
             <span class="mod-elipse-coffee"></span>
-              <img
-                class="mod-buy-now_img"
-                srcset="
-                  ./images/mod-icecoffee-1x.png 1x,
-                  ./images/mod-icecoffee-2x.png 2x"
-                src="./images/mod-icecoffee-1x.png"
-                alt="ice coffee"
-                width="132" 
-                height="139"/>
-            </label> 
+            <img class="mod-buy-now_img" srcset="
+                      ./images/mod-icecoffee-1x.png 1x,
+                      ./images/mod-icecoffee-2x.png 2x" src="./images/mod-icecoffee-1x.png" alt="ice coffee"
+              width="132" height="139" />
+          </label>
         </li>
         <li class="mod-buy-now_item">
-            <label for="milkshake" class="mod-buy-now_label">
-              <input
-                type="checkbox"
-                id="milkshake"
-                name="buy-now"
-                class="mod-buy-now_input"
-              />
-              <span class="mod-buy-now_label-span-milk">milkshake</span>
-              <span class="mod-elipse-milk"></span>
-              <img
-                class="mod-buy-now_img"
-                srcset="
-                  ./images/mod-milkshake-1x.png 1x,
-                  ./images/mod-milkshake-2x.png 2x"
-                src="./images/mod-milkshake-1x.png"
-                alt="milkshake"
-                width="132"
-                height="139"/>
-            </label>
+          <label for="milkshake" class="mod-buy-now_label">
+            <input type="checkbox" id="milkshake" name="buy-now" class="mod-buy-now_input" />
+            <span class="mod-buy-now_label-span-milk">milkshake</span>
+            <span class="mod-elipse-milk"></span>
+            <img class="mod-buy-now_img" srcset="
+                      ./images/mod-milkshake-1x.png 1x,
+                      ./images/mod-milkshake-2x.png 2x" src="./images/mod-milkshake-1x.png" alt="milkshake" width="132"
+              height="139" />
+          </label>
         </li>
       </ul>
       <div class="modal-form">
         <label class="modal-form_label">
-          <input
-            type="text"
-            name="name"
-            placeholder="name"
-            pattern="[A-z]{1,15}"
-            title="Please use your name"
-            class="modal-form_input"
-          />
+          <input type="text" name="name" placeholder="name" pattern="[A-z]{1,15}" title="Please use your name"
+            class="modal-form_input" />
         </label>
 
         <label class="modal-form_label">
-          <input
-            type="tel"
-            name="tel"
-            placeholder="phone"
-            autofocus="autofocus"
-            pattern="[0-9]{0,12}"
-            title="Please use your phone"
-            class="modal-form_input"
-          />
+          <input type="tel" name="tel" placeholder="phone" autofocus="autofocus" pattern="[0-9]{0,12}"
+            title="Please use your phone" class="modal-form_input" />
         </label>
 
         <label class="modal-form_label">
-          <textarea
-            name="comment"
-            cols="30"
-            rows="10"
-            placeholder="comment"
-            title="Please use your comment"
-            minlength="3" 
-            maxlength="50"
-            class="modal-form_textarea"
-          ></textarea>
+          <textarea name="comment" cols="30" rows="10" placeholder="comment" title="Please use your comment"
+            minlength="3" maxlength="50" class="modal-form_textarea"></textarea>
         </label>
       </div>
 
@@ -115,11 +65,11 @@
     </form>
   </div>
 </div>
-<!-- modal ingredients -->
-<div class="backdrop">
-  <div class="mod-ingredients">
+<!-- modal ingredients +++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div class="overlay js-overlay-modal">
+  <div class="mod-ingredients modal" data-modal="2">
     <div class="mod-ingredients_wrap">
-      <button type="button" class="close-modal_button">
+      <button type="button" class="close-modal_button js-modal-close">
         <svg class="close-modal_icon">
           <use href="./images/icons.svg#icon-modal-close"></use>
         </svg>
@@ -216,11 +166,11 @@
       </form>
     </div>
   </div>
-</div>
-<!-- modal How it’s made? -->
-<div class="backdrop">
-  <div class="mod-howitsmade">
-    <button type="button" class="close-modal_button">
+  </div>
+<!-- modal How it’s made? +++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div class="overlay js-overlay-modal">
+  <div class="mod-howitsmade modal" data-modal="3">
+    <button type="button" class="close-modal_button js-modal-close" >
       <svg class="close-modal_icon">
         <use href="./images/icons.svg#icon-modal-close"></use>
       </svg>
@@ -241,11 +191,11 @@
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et
     </p>
   </div>
-</div>
-<!-- modal Our Locations -->
-<div class="backdrop">
-  <div class="mod-lacations">
-    <button type="button" class="close-modal_button">
+  </div>
+<!-- modal Our Locations ++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div class="overlay js-overlay-modal">
+<div class="mod-lacations modal" data-modal="4">
+    <button type="button" class="close-modal_button js-modal-close">
       <svg class="close-modal_icon">
         <use href="./images/icons.svg#icon-modal-close"></use>
       </svg>
@@ -256,7 +206,7 @@
       target="_blank"
       rel = ”noreferrer”
       class="mod-lacations_link"
-    >
+    > 
       <img
         src="./images/map-location.png"
         alt="map"
@@ -266,11 +216,11 @@
     /></a>
     <button type="button" class="mod-lacations_button">Open map</button>
   </div>
-</div>
-<!-- Franchise modal -->
-<div class="backdrop">
-  <div class="mod-franchise">
-    <button type="button" class="close-modal_button">
+  </div>
+<!-- Franchise modal ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div class="overlay js-overlay-modal">
+<div class="mod-franchise modal" data-modal="5">
+    <button type="button" class="close-modal_button js-modal-close">
       <svg class="close-modal_icon">
         <use href="./images/icons.svg#icon-modal-close"></use>
       </svg>
@@ -326,4 +276,7 @@
       <button type="submit" class="mod-franchise_button">Submit</button>
     </form>
   </div>
-</div>
+  </div>
+ 
+  
+ 

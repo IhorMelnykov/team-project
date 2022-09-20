@@ -1,5 +1,8 @@
 .contacts {
+  
+
   &-list {
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -86,6 +89,18 @@
     }
   }
 }
+.container.contacts{
+  position: relative;
+    bottom: 450px;
+
+    @include tablet {
+        bottom: 400px;
+      }
+    
+      @include desktop {
+        bottom: 200px;
+      }
+}
 
 .adress {
   margin-top: 8px;
@@ -102,11 +117,13 @@
 .contacts-adress {
   color: #d6936d;
   text-decoration: none;
+  transition: transform var(--main-transition);
 
   &:focus,
   &:hover {
     text-decoration: underline;
   }
+
 }
 
 .schedule-list::before,
@@ -197,7 +214,16 @@
   margin-top: 32px;
   width: 196px;
   transition: color var(--main-transition),
-    background-color var(--main-transition);
+    border var(--main-transition);
+}
+
+.contacts-icon {
+  transition: fill var(--main-transition);
+
+  .btn-location:focus &,
+  .btn-franchise:focus & {
+    fill: var(--secondary-text-color);
+  }
 }
 
 .button.btn-franchise {

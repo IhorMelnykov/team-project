@@ -225,6 +225,15 @@ body {
 .header-nav-item:hover, .header-nav-item:focus {
   color: var(--accent-color);
 }
+.header-button:hover {
+  background-color: var(--button-focus-color);
+  border-color: var(--button-focus-color);
+}
+.header-button:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--button-focus-color);
+  border-color: var(--button-focus-color);
+}
 
 .header .container {
   display: flex;

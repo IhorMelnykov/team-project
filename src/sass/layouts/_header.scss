@@ -73,6 +73,16 @@
         color: var(--accent-color);    
     }           
 }
+  &-button:hover {
+    background-color: var(--button-focus-color);
+    border-color: var(--button-focus-color);
+}
+  &-button:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--button-focus-color);
+    border-color: var(--button-focus-color);
+  }
+
 }
 
 .header .container {
@@ -103,6 +113,7 @@
   background-color: var(--main-background-color);  
   border: none;
 }
+
 
 .mob-menu-icon {
   justify-content: center;

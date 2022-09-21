@@ -118,6 +118,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
     gap: 30px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -283,26 +284,26 @@
 
 .mod-buy-now_form {
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    text-align: center;
-  
-    @media screen and (min-width: 768px) {
-      gap: 16px;
-    }
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+  }
 }
 
 .modal-form_wrap {
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    text-align: center;
-  
-    @media screen and (min-width: 768px) {
-      gap: 16px;
-    }
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+  }
 }
 
 .modal-form_label {
@@ -456,8 +457,13 @@
   width: 132px;
   height: 138px;
   border-radius: 50%;
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
 .mod-ingredients_img {
@@ -465,7 +471,6 @@
   top: 0;
   left: 0;
   margin-bottom: 24px;
-  
 }
 
 .mod-ingredients_item {
@@ -562,10 +567,10 @@
 
 .form-ingredients_wrap {
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
 }
 .form-ingredients_wrap .modal-form_textarea {
   padding: 11px;

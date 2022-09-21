@@ -1,12 +1,12 @@
 .advantages {
-  padding-top: 48px;
+  padding-top: 42px;
 
   @include tablet {
-    padding-top: 0px;
+    padding-top: 53px;
   }
 
   @include desktop {
-    padding-top: 60px;
+    padding-top: 50px;
   }
 }
 

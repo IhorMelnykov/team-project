@@ -1,16 +1,15 @@
-.section.contacts{
+.section.contacts {
   padding-top: 0;
   padding-bottom: 0;
   height: 1070px;
 
   @include tablet {
-      height: 300px;
-    }
-  
-    @include desktop {
-      height: 530px;
-    }
+    height: 300px;
+  }
 
+  @include desktop {
+    height: 530px;
+  }
 }
 .contacts {
   &-list {
@@ -106,10 +105,10 @@
 }
 .container.contacts {
   position: relative;
-  bottom: 390px;
+  bottom: 420px;
 
   @include tablet {
-    bottom: 340px;
+    bottom: 310px;
   }
 
   @include desktop {

@@ -14,15 +14,23 @@
     line-height: 1.26;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    width: 247px;
 
     color: var(--secondary-text-color);
     margin-top: 57px;
     margin-bottom: 32px;
-    padding-right: 100px;
+    // padding-right: 100px;
+    @media screen and (min-width: 768px) {
+      width: 181px;
+      font-size: 16px;
+      line-height: 0.8;
+    }
   }
 
   .hero-set {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero-button {

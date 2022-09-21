@@ -237,12 +237,9 @@
 }
 
 .mob-menu-buy {
-  font-family: 'Roboto';
-  font-style: normal;
-  @include fonts(600, 14, 16, 0.03);
-  color: var(--primary-text-color);
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  font-weight: 600;
+
+  @include fonts(600, 14, 17, 0.03);
   border-radius: 10px;
   width: 152px;
   height: 42px;
@@ -255,4 +252,17 @@
   @media screen and (min-width: 1200px) {
     display: none;
   }
+}
+
+.header-button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  @include fonts(600, 14, 17, 0.03);
+  border-radius: 10px;
+  width: 152px;
+  height: 42px;
 }

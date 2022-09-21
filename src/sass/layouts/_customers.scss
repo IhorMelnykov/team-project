@@ -3,10 +3,10 @@
 //     padding-bottom: 60px;
 // }
 .customers {
-background-image: url(/src/images/background.jpg);
-background-position: top;
-background-repeat: no-repeat;
-background-size: cover;
+  background-image: url(/src/images/background.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .customer-item {
   width: 100%;
@@ -24,10 +24,18 @@ background-size: cover;
 
 .customer-img {
   border-radius: 50%;
-  margin-top: 181px;
+  margin-top: 121px;
   margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
+  @include tablet {
+    margin-top: 161px;
+    margin-bottom: 34px;
+  }
+  @include desktop {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }
 .customer-review {
   color: #fcfcfc;
@@ -57,9 +65,9 @@ background-size: cover;
   border-radius: 7.41px;
   margin-left: auto;
   margin-right: auto;
-//   @include mobile {
-//     max-width: 440px;
-//   }
+  //   @include mobile {
+  //     max-width: 440px;
+  //   }
   @include tablet {
     width: 705px;
     height: 138px;
@@ -88,14 +96,11 @@ background-size: cover;
   position: relative;
 }
 
-
 .slick-dots {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    
-  
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .slick-dots li {
   width: 0;
@@ -105,48 +110,45 @@ background-size: cover;
   display: inline-block;
   padding: 0;
   cursor: pointer;
-  
+
   @include tablet {
     bottom: 380px;
   }
   @include desktop {
     bottom: 240px;
   }
-  }
-
+}
 
 .slick-dots li button {
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 0;
-    height: 0;
-    padding: 0;
-    cursor: pointer;
-    border: 0;
-    outline: none;
-    background: transparent;
-    
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background: transparent;
 }
 
 .slick-dots li button:before {
-    font-family: 'slick';
-    font-size: 12px;
-    line-height: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    content: '•';
-    text-align: center;
-    opacity: .15;
-    fill: #84A178;
-    -webkit-font-smoothing: antialiased;
-    
+  font-family: 'slick';
+  font-size: 12px;
+  line-height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  content: '•';
+  text-align: center;
+  opacity: 0.15;
+  fill: #84a178;
+  -webkit-font-smoothing: antialiased;
 }
 
 .slick-dots li.slick-active button:before {
-    opacity: .75;
-    color: #84A178;
+  opacity: 0.75;
+  color: #84a178;
 }

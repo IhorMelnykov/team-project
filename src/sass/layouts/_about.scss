@@ -1,4 +1,6 @@
 .about {
+  padding-bottom: 0;
+
   &__wrap {
     position: relative;
 
@@ -12,7 +14,7 @@
     }
 
     @include desktop {
-      padding: 0 120px 102px 34px;
+      padding: 0 120px 88px 34px;
     }
   }
 
@@ -56,7 +58,6 @@
   }
 
   &__image {
-    outline: 1px solid red;
     position: absolute;
 
     border-radius: 50%;

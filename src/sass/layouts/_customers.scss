@@ -1,3 +1,7 @@
+// .customers {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }
 .customers {
 background-image: url(/src/images/background.jpg);
 background-position: top;
@@ -6,14 +10,14 @@ background-size: cover;
 }
 .customer-item {
   width: 100%;
-  padding-top: 181px;
-  padding-bottom: 409px;
+  padding-top: 70px;
+  padding-bottom: 489px;
   @include tablet {
-    padding-top: 218px;
-    padding-bottom: 483px;
+    padding-top: 55px;
+    padding-bottom: 383px;
   }
   @include desktop {
-    padding-top: 451px;
+    padding-top: 273px;
     padding-bottom: 240px;
   }
 }
@@ -53,9 +57,9 @@ background-size: cover;
   border-radius: 7.41px;
   margin-left: auto;
   margin-right: auto;
-  @include mobile {
-    width: 280px;
-  }
+//   @include mobile {
+//     max-width: 440px;
+//   }
   @include tablet {
     width: 705px;
     height: 138px;
@@ -96,14 +100,14 @@ background-size: cover;
 .slick-dots li {
   width: 0;
   height: 0;
-  bottom: 405px;
+  bottom: 490px;
   position: relative;
   display: inline-block;
   padding: 0;
   cursor: pointer;
   
   @include tablet {
-    bottom: 480px;
+    bottom: 380px;
   }
   @include desktop {
     bottom: 240px;

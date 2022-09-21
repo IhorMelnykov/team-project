@@ -4,7 +4,12 @@
     
     padding-top: 60px;
     padding-bottom: 60px;
-    
+    @include tablet {
+        padding-bottom: 82px;
+    }
+    @include desktop {
+        padding-bottom: 66px;
+    }
 }
 
 .products-label {
@@ -242,6 +247,9 @@ border-radius: 24px;
     border: none;
     .products-modal-arrow-hover, .products-modal-arrow-focus {
         display: none;
+    }
+    @include tablet {
+        transform: translateY(-40);
     }
     @include desktop {
         transform: translateY(-85);

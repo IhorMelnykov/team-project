@@ -81,7 +81,7 @@
           </label>
         </li>
       </ul>
-      <div class="modal-form">
+      <div class="mod-buy-now_form">
         <label class="modal-form_label">
           <input
             type="text"
@@ -130,6 +130,7 @@
         </svg>
       </button>
       <h2 class="mod-ingredients_title">Chololate icecream</h2>
+      <div class="ingredients-img-wrap">
       <img
         class="mod-ingredients_img"
         srcset="
@@ -139,8 +140,8 @@
         src="./images/mod-ingredient-1x.png"
         alt="ice cream"
         width="132"
-        height="139"
-      />
+        height="139"/>
+      </div>
       <ul class="mod-ingredients_list">
         <li class="mod-ingredients_item">
           <p class="ingredients-icon_meaning">320</p>
@@ -187,6 +188,7 @@
         </li>
       </ul>
       <form class="modal-form">
+        <div class="form-ingredients_wrap">
         <label class="modal-form_label">
           <input
             type="text"
@@ -202,11 +204,9 @@
             type="tel"
             name="tel"
             placeholder="phone"
-            autofocus="autofocus"
             pattern="[0-9]{0,12}"
             title="Please use your phone"
-            class="modal-form_input"
-          />
+            class="modal-form_input"/>
         </label>
         <label class="modal-form_label">
           <textarea
@@ -220,8 +220,8 @@
             class="modal-form_textarea"
           ></textarea>
         </label>
-      </div>
-      <button type="submit" class="mod-buy-now_button">Submit</button>
+        </div>
+      <button type="submit" class="mod-ingredients_button">Submit</button>
       </form>
     </div>
   </div>
@@ -265,16 +265,16 @@
       href="https://goo.gl/maps/eVM5a4UHusVCzEKq7"
       target="_blank"
       rel="”noreferrer”"
-      class="mod-lacations_link"
-    >
+      class="mod-lacations_link">
       <img
         src="./images/map-location.png"
         alt="map"
         width="220"
         height="199"
-        class="mod-lacations_img"
-    /></a>
-    <button type="button" class="mod-lacations_button">Open map</button>
+        class="mod-lacations_img"/></a>
+        <button class="mod-lacations_button" 
+        onclick="window.location.href = 'https://goo.gl/maps/eVM5a4UHusVCzEKq7';">
+        Open map</button>
   </div>
 </div>
 <!-- Franchise modal ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -296,48 +296,36 @@
       information. We appreciate your patience.
     </p>
     <form class="modal-form">
-      <label class="modal-form_label">
-        <input
-          type="text"
+      <div class="modal-form_wrap">
+     <label class="modal-form_label">
+      <input  type="text"
           name="name"
           placeholder="name"
           pattern="[A-z]{1,15}"
           title="Please use your name"
-          class="modal-form_input"
-        />
-      </label>
-      <label class="modal-form_label">
-        <input
-          name="tel"
+          class="modal-form_input"/>
+    </label>
+    <label class="modal-form_label">
+      <input name="tel"
           type="tel"
           placeholder="phone"
           pattern="[0-9]{0,12}"
           title="Please use your phone"
-          class="modal-form_input"
-        />
-      </label>
-      <label class="modal-form_label">
-        <input
-          name="email"
+          class="modal-form_input"/>
+    </label>
+    <label class="modal-form_label">
+      <input name="email"
           type="email"
           placeholder="Email"
           title="Please use your email"
-          class="modal-form_input"
-        />
-      </label>
-      <label class="modal-form_label">
-        <textarea
-          name="comment"
-          cols="30"
-          rows="10"
-          placeholder="comment"
-          title="Please use your comment"
-          minlength="3"
-          maxlength="50"
-          class="modal-form_textarea"
-        ></textarea>
-      </label>
-      <button type="submit" class="mod-franchise_button">Submit</button>
+          class="modal-form_input"/>
+    </label>
+    <label class="modal-form_label">
+      <textarea name="comment" cols="30" rows="10" placeholder="comment" title="Please use your comment" minlength="3"
+        maxlength="50" class="modal-form_textarea"></textarea>
+        </label>
+        </div>
+           <button type="submit" class="mod-franchise_button">Submit</button>
     </form>
   </div>
 </div>

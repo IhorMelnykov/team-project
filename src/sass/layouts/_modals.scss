@@ -280,16 +280,28 @@
   border-radius: 50%;
 }
 
-.modal-form {
+.mod-buy-now_form {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+  
+    @media screen and (min-width: 768px) {
+      gap: 16px;
+    }
+}
 
-  @media screen and (min-width: 768px) {
-    gap: 16px;
-  }
+.modal-form_wrap {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+  
+    @media screen and (min-width: 768px) {
+      gap: 16px;
+    }
 }
 
 .modal-form_label {
@@ -436,9 +448,23 @@
   }
 }
 
-.mod-ingredients_img {
-  margin-bottom: 24px;
+.ingredients-img-wrap {
+  position: relative;
   margin: 0 auto;
+  margin-bottom: 24px;
+  width: 132px;
+  height: 138px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.mod-ingredients_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 24px;
+  
 }
 
 .mod-ingredients_item {
@@ -531,6 +557,23 @@
 .ingredients_text {
   @include fonts(400, 14, 25, 0.04);
   color: var(--primary-text-color);
+}
+
+.form-ingredients_wrap {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+}
+.form-ingredients_wrap .modal-form_textarea {
+  padding: 11px;
+  height: 84px;
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    padding: 11px 16px;
+  }
 }
 
 .mod-ingredients_button {
@@ -746,6 +789,7 @@
   align-items: center;
   margin: 0 auto;
   padding: 12px 34px;
+  margin-top: 24px;
 
   @include fonts(600, 12, 15, 0);
   background: #f8d24e;
@@ -757,6 +801,7 @@
   @media screen and (min-width: 768px) {
     @include fonts(400, 16, 17, 0);
     margin: 0 auto;
+    margin-top: 32px;
   }
 
   &:hover,

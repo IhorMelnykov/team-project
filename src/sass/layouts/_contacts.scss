@@ -1,3 +1,17 @@
+.section.contacts{
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 1070px;
+
+  @include tablet {
+      height: 300px;
+    }
+  
+    @include desktop {
+      height: 530px;
+    }
+
+}
 .contacts {
   &-list {
     display: flex;
@@ -92,14 +106,14 @@
 }
 .container.contacts {
   position: relative;
-  bottom: 450px;
+  bottom: 390px;
 
   @include tablet {
-    bottom: 400px;
+    bottom: 340px;
   }
 
   @include desktop {
-    bottom: 200px;
+    bottom: 140px;
   }
 }
 

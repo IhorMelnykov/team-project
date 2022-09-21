@@ -10,14 +10,15 @@
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
-    font-size: 38px;
+    font-size: 26px;
     line-height: 1.26;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: var(--secondary-text-color);
-    margin-top: 72px;
+    margin-top: 57px;
     margin-bottom: 32px;
+    padding-right: 100px;
   }
 
   .hero-set {
@@ -47,6 +48,12 @@
 
     margin-top: 28px;
     margin-right: 34px;
+
+    &:hover,
+    &:focus {
+      border: 2px solid var(--border-color);
+      color: var(--secondary-text-color);
+    }
   }
 
   .hero-btn {
@@ -56,15 +63,17 @@
     font-size: 14px;
     line-height: 1.21;
 
-    display: block;
-    align-items: center;
-    text-align: center;
     text-decoration-line: underline;
 
     color: var(--accent-color);
     background-color: var(--main-background-color);
     border: none;
-    margin-top: 32px;
+    margin-top: 40px;
+
+    &:hover,
+    &:focus {
+      color: var(--border-color);
+    }
   }
 
   .hero-list {
@@ -87,6 +96,8 @@
 
   .hero-part {
     margin-top: 31.55px;
+    padding-left: 82px;
+    padding-right: 81px;
   }
 
   .hero-part__image {
@@ -100,6 +111,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
+    height: 415px;
     background-image: url(/src/images/hero-image/tablet-fon.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -110,15 +122,15 @@
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
-    font-size: 38px;
-    line-height: 1.26;
-    letter-spacing: 0.04em;
+    font-size: 18px;
+    line-height: 1.27;
+    //letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: var(--secondary-text-color);
     margin-top: 53px;
-    margin-bottom: 20px;
-    padding-right: 355px;
+    margin-bottom: 28px;
+    padding-right: 500px;
   }
 
   .hero-set {
@@ -129,15 +141,16 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
+    font-size: 8px;
+    line-height: 1.25;
 
     display: flex;
     align-items: center;
     text-align: center;
 
     border: 2px solid var(--accent-color);
-    border-radius: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
     background-color: var(--main-background-color);
     color: var(--primary-text-color);
 
@@ -146,18 +159,22 @@
     padding-left: 34px;
     padding-right: 34px;
 
-    margin-top: 28px;
     margin-right: 34px;
+
+    &:hover,
+    &:focus {
+      border: 2px solid var(--border-color);
+      color: var(--secondary-text-color);
+    }
   }
 
   .hero-btn {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
+    font-size: 8px;
+    line-height: 1.25;
 
-    display: block;
     align-items: center;
     text-align: center;
     text-decoration-line: underline;
@@ -165,23 +182,38 @@
     color: var(--accent-color);
     background-color: var(--main-background-color);
     border: none;
-    margin-top: 32px;
+    margin-top: 10px;
+
+    &:hover,
+    &:focus {
+      color: var(--border-color);
+    }
   }
 
   .hero-list {
-    position: absolute;
-    margin-top: 270px;
-    margin-bottom: 65px;
+    position: relative;
+    top: 112px;
 
-    // &__image {
-    // }
+    &__image {
+      width: 152px;
+    }
 
     &__text {
-      position: absolute;
-      font-size: 14px;
-      line-height: 1.42;
+      font-size: 12px;
+      line-height: 1.7;
       color: var(--secondary-text-color);
     }
+  }
+
+  .hero-part__text {
+    width: 151px;
+    position: relative;
+    left: 216px;
+    bottom: 40px;
+  }
+
+  .hero-additions__title {
+    margin-bottom: 20px;
   }
 
   .hero-icon {
@@ -189,9 +221,9 @@
   }
 
   .hero-part {
-    margin-top: 90.08px;
-    margin-left: 418px;
-    margin-right: 81px;
+    position: relative;
+    left: 390px;
+    bottom: 382px;
   }
 
   .picture {
@@ -199,16 +231,43 @@
   }
 
   .hero-part__image {
-    margin-bottom: 0px;
+    width: 257px;
+    height: 324.92px;
+  }
+
+  .hero-numbers__part {
+    position: relative;
+    bottom: 680px;
+    right: 10px;
   }
 
   .hero-numbers {
     text-align: right;
   }
+
+  .hero-numbers__one {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .hero-numbers__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+
+    color: var(--secondary-text-color);
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
+    height: 664px;
     background-image: url(/src/images/hero-image/desktop-fon.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -257,6 +316,12 @@
 
     margin-top: 28px;
     margin-right: 34px;
+
+    &:hover,
+    &:focus {
+      border: 2px solid var(--border-color);
+      color: var(--secondary-text-color);
+    }
   }
 
   .hero-btn {
@@ -275,22 +340,36 @@
     background-color: var(--main-background-color);
     border: none;
     margin-top: 32px;
+
+    &:hover,
+    &:focus {
+      color: var(--border-color);
+    }
   }
 
   .hero-list {
-    position: absolute;
-    margin-top: 474px;
-    margin-bottom: 65px;
+    position: relative;
+    top: 130px;
 
     // &__image {
     // }
 
     &__text {
-      position: absolute;
       font-size: 14px;
       line-height: 1.42;
       color: var(--secondary-text-color);
     }
+  }
+
+  .hero-part__text {
+    width: 200px;
+    position: relative;
+    left: 235px;
+    bottom: 30px;
+  }
+
+  .hero-additions__title {
+    margin-bottom: 32px;
   }
 
   .hero-icon {
@@ -298,9 +377,9 @@
   }
 
   .hero-part {
-    margin-top: 103px;
-    margin-left: 651px;
-    margin-right: 81px;
+    position: relative;
+    left: 651px;
+    bottom: 544px;
   }
 
   .picture {
@@ -311,7 +390,31 @@
     margin-bottom: 0px;
   }
 
+  .hero-numbers__part {
+    position: relative;
+    bottom: 1050px;
+  }
+
   .hero-numbers {
     text-align: right;
+  }
+
+  .hero-numbers__one {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .hero-numbers__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+
+    color: var(--secondary-text-color);
   }
 }

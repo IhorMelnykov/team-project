@@ -31,6 +31,7 @@
   &.active {
     opacity: 1;
     visibility: visible;
+    transform: translate(-50%, -55%) scale(0.9);
   }
 }
 
@@ -49,14 +50,14 @@
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 }
 
 .close-modal_icon {
-  width: 15px;
-  height: 15px;
+  width: 11px;
+  height: 1px;
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -66,8 +67,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -78,19 +79,19 @@
   margin: 0 auto;
   width: 280px;
   height: 986px;
+  max-height: 680px;
   background: var(--secondary-text-color);
   border: 2px solid #f8d24e;
   border-radius: 10px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  .overlay.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   @media screen and (min-width: 768px) {
     padding: 32px 54px;
     width: 568px;
     height: 644px;
+    max-height: 644px;
   }
 }
 
@@ -405,19 +406,19 @@
   margin: 0 auto;
   width: 280px;
   height: 990px;
+  max-height: 680px;
   background: var(--secondary-text-color);
   border: 2px solid #f8d24e;
   border-radius: 10px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  .overlay.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   @media screen and (min-width: 768px) {
     padding: 32px 40px;
     width: 568px;
     height: 995px;
+    max-height: 995px;
   }
 }
 
@@ -609,10 +610,6 @@
   border-radius: 10px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .overlay.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
-
   @media screen and (min-width: 768px) {
     padding: 32px 60px;
     width: 568px;
@@ -667,10 +664,6 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  .overlay.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
 
   @media screen and (min-width: 768px) {
     padding: 32px 60px;
@@ -741,10 +734,8 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  .overlay.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.9);
-  }
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   @media screen and (min-width: 768px) {
     padding: 32px 60px;

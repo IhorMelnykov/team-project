@@ -31,7 +31,7 @@
   &.active {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, -55%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.9);
   }
 }
 
@@ -422,8 +422,6 @@
     padding: 32px 40px;
     width: 568px;
     height: 995px;
-    max-height: 995px;
-    overflow-y: hidden;
     overflow-x: hidden;
   }
 }

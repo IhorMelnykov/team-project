@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    height: 450px;
   }
 
   .hero-title {
@@ -19,13 +20,21 @@
     color: var(--secondary-text-color);
     margin-top: 57px;
     margin-bottom: 32px;
-    // padding-right: 100px;
-    @media screen and (min-width: 768px) {
-      width: 181px;
-      font-size: 16px;
-      line-height: 0.8;
-    }
   }
+
+  .hero-title_span {
+    font-family: 'Seymour One';
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 0.965;
+      text-transform: uppercase;
+      width: 247px;
+    
+      color: var(--secondary-text-color);
+      margin-top: 57px;
+      margin-bottom: 32px;
+    }
+
 
   .hero-set {
     display: flex;
@@ -70,6 +79,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
+    cursor: pointer;
 
     text-decoration-line: underline;
 
@@ -103,13 +113,12 @@
   }
 
   .hero-part {
-    margin-top: 31.55px;
     padding-left: 82px;
     padding-right: 81px;
   }
 
   .hero-part__image {
-    box-shadow: rgba(252, 252, 252, 0.44);
+  
   }
 
   .hero-numbers {
@@ -117,9 +126,18 @@
   }
 }
 
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.background-filter {
+
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    height: 415px;
+    height: 350px;
     background-image: url(/src/images/hero-image/tablet-fon.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -131,15 +149,25 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.27;
-    //letter-spacing: 0.04em;
+    line-height: 1.28;
+    width: 181px;
     text-transform: uppercase;
 
     color: var(--secondary-text-color);
     margin-top: 53px;
     margin-bottom: 28px;
-    padding-right: 500px;
   }
+
+  .hero-title_span {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.28;
+    text-transform: uppercase;
+    width: 182px;
+  
+    color: var(--secondary-text-color);
+     }
 
   .hero-set {
     display: flex;
@@ -182,10 +210,12 @@
     font-weight: 600;
     font-size: 8px;
     line-height: 1.25;
+    padding: 8px;
 
     align-items: center;
     text-align: center;
     text-decoration-line: underline;
+    cursor: pointer;
 
     color: var(--accent-color);
     background-color: var(--main-background-color);
@@ -200,7 +230,7 @@
 
   .hero-list {
     position: relative;
-    top: 112px;
+    top: 32px;
 
     &__image {
       width: 152px;
@@ -217,7 +247,7 @@
     width: 151px;
     position: relative;
     left: 216px;
-    bottom: 40px;
+    bottom: 112px;
   }
 
   .hero-additions__title {
@@ -231,7 +261,7 @@
   .hero-part {
     position: relative;
     left: 390px;
-    bottom: 382px;
+    bottom: 424px;
   }
 
   .picture {
@@ -275,7 +305,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
-    height: 664px;
+    height: 587px;
     background-image: url(/src/images/hero-image/desktop-fon.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -290,11 +320,23 @@
     line-height: 1.26;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    width: 367px;
 
     color: var(--secondary-text-color);
     margin-top: 58px;
     margin-bottom: 28px;
-    padding-right: 716px;
+  }
+
+  .hero-title_span {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    width: 367px;
+  
+    color: var(--secondary-text-color);
   }
 
   .hero-set {
@@ -343,6 +385,7 @@
     align-items: center;
     text-align: center;
     text-decoration-line: underline;
+    cursor: pointer;
 
     color: var(--accent-color);
     background-color: var(--main-background-color);
@@ -357,7 +400,7 @@
 
   .hero-list {
     position: relative;
-    top: 130px;
+    top: 50px;
 
     // &__image {
     // }
@@ -373,7 +416,7 @@
     width: 200px;
     position: relative;
     left: 235px;
-    bottom: 30px;
+    bottom: 98px;
   }
 
   .hero-additions__title {
@@ -387,7 +430,7 @@
   .hero-part {
     position: relative;
     left: 651px;
-    bottom: 544px;
+    bottom: 565px;
   }
 
   .picture {
@@ -425,4 +468,10 @@
 
     color: var(--secondary-text-color);
   }
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  margin-top: 5px;
 }

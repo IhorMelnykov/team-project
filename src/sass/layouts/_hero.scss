@@ -38,6 +38,9 @@
 
 
   .hero-set {
+    position: relative;
+    bottom:380px;
+    left: 0px;
     display: flex;
     align-items: center;
     
@@ -113,15 +116,17 @@
   }
 
   .hero-part {
+    display: inline-block;
     width: 100%;
     position: relative;
-    bottom: 66px;
+    bottom: 45px;
     padding-left: 82px;
     padding-right: 81px;
+   
   }
 
   .hero-part__image {
-  
+  min-width: 278px;
   }
 
   .hero-numbers {
@@ -173,9 +178,11 @@
      }
 
   .hero-set {
+    position: relative;
+      bottom: 650px;
+      left: 0px;
     display: flex;
     align-items: center;
-    z-index: 10;
   }
 
   .hero-button {
@@ -235,7 +242,7 @@
 
   .hero-list {
     position: relative;
-    top: 32px;
+    top: 65px;
 
     &__image {
       width: 152px;
@@ -251,8 +258,8 @@
   .hero-part__text {
     width: 151px;
     position: relative;
-    left: 216px;
-    bottom: 112px;
+    left: 180px;
+    bottom: 75px;
   }
 
   .hero-additions__title {
@@ -265,10 +272,9 @@
 
   .hero-part {
     position: relative;
-    left: 390px;
-    bottom: 424px;
+    left: 370px;
+    bottom: 385px;
     pointer-events: none;
-    z-index: 1;
   }
 
   .picture {
@@ -348,6 +354,9 @@
   }
 
   .hero-set {
+    position: relative;
+      bottom: 950px;
+      left: 0px;
     display: flex;
     align-items: center;
   }
@@ -398,19 +407,19 @@
     cursor: pointer;
 
     color: var(--accent-color);
-    background-color: transparent;
     border: none;
     margin-top: 32px;
 
     &:hover,
     &:focus {
       color: var(--border-color);
+
     }
   }
 
   .hero-list {
     position: relative;
-    top: 50px;
+    top: 120px;
 
     // &__image {
     // }
@@ -426,7 +435,7 @@
     width: 200px;
     position: relative;
     left: 235px;
-    bottom: 98px;
+    bottom: 70px;
   }
 
   .hero-additions__title {
@@ -438,9 +447,10 @@
   }
 
   .hero-part {
+    display: inline-block;
     position: relative;
-    left: 651px;
-    bottom: 565px;
+    left: 670px;
+    bottom: 490px;
   }
 
   .picture {
@@ -452,8 +462,10 @@
   }
 
   .hero-numbers__part {
+    display: inline-block;
     position: relative;
     bottom: 1050px;
+  right: -1100px;
   }
 
   .hero-numbers {

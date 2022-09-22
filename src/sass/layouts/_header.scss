@@ -26,8 +26,6 @@
     @media screen and (min-width: 1200px) {
       max-width: 1200px;
       display: block;
-      margin-left: 270px;
-      margin-top: 40px;
     }
   }
   &-button {
@@ -46,15 +44,11 @@
     display: none;
     @media screen and (min-width: 768px) {
       display: block;
-      position: absolute;
-      top: 24px;
-      right: 32px;
+  
     }
     @media screen and (min-width: 1200px) {
       display: block;
-      position: absolute;
-      top: 28px;
-      right: 16px;
+
     }
   }
   &-nav-list {
@@ -85,6 +79,7 @@
 .header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 /* .header-nav-item:hover,
@@ -93,13 +88,15 @@
 } */
 
 .mob-menu-btn {
-  position: absolute;
-  top: 16px;
-  right: 20px;
+  // position: absolute;
+  // top: 16px;
+  // right: 20px;
   @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 28px;
-    right: 216px;
+    // position: absolute;
+    // top: 28px;
+    // right: 216px;
+    justify-content: center;
+    margin-left: 380px;
   }
   @media screen and (min-width: 1200px) {
     display: none;

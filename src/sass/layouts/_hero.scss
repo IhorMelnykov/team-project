@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 767px) {
   .hero {
     background-image: url(/src/images/hero-image/mobile-fon.png);
@@ -25,25 +24,23 @@
 
   .hero-title_span {
     font-family: 'Seymour One';
-      font-weight: 400;
-      font-size: 34px;
-      line-height: 0.965;
-      text-transform: uppercase;
-      width: 247px;
-    
-      color: var(--secondary-text-color);
-      margin-top: 57px;
-      margin-bottom: 32px;
-    }
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 0.965;
+    text-transform: uppercase;
+    width: 247px;
 
+    color: var(--secondary-text-color);
+    margin-top: 57px;
+    margin-bottom: 32px;
+  }
 
   .hero-set {
     position: relative;
-    bottom:380px;
+    bottom: 300px;
     left: 0px;
     display: flex;
     align-items: center;
-    
   }
 
   .hero-button {
@@ -52,6 +49,7 @@
     font-weight: 600;
     font-size: 8px;
     line-height: 1.29;
+    text-decoration: none;
 
     display: flex;
     align-items: center;
@@ -89,7 +87,6 @@
     color: var(--accent-color);
     background-color: var(--main-background-color);
     border: none;
-    
 
     &:hover,
     &:focus {
@@ -122,11 +119,13 @@
     bottom: 45px;
     padding-left: 82px;
     padding-right: 81px;
-   
   }
 
   .hero-part__image {
-  min-width: 278px;
+    min-width: 219px;
+    left: -25px;
+    bottom: -75px;
+    position: relative;
   }
 
   .hero-numbers {
@@ -139,9 +138,9 @@
   border: none;
 }
 
-.background-filter {
+// .background-filter {
 
-}
+// }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
@@ -173,14 +172,14 @@
     line-height: 1.28;
     text-transform: uppercase;
     width: 182px;
-  
+
     color: var(--secondary-text-color);
-     }
+  }
 
   .hero-set {
     position: relative;
-      bottom: 650px;
-      left: 0px;
+    bottom: 650px;
+    left: 0px;
     display: flex;
     align-items: center;
   }
@@ -191,6 +190,7 @@
     font-weight: 600;
     font-size: 8px;
     line-height: 1.25;
+    text-decoration: none;
 
     display: flex;
     align-items: center;
@@ -272,7 +272,9 @@
 
   .hero-part {
     position: relative;
+    display: inline-block;
     left: 370px;
+    // right: -380px;
     bottom: 385px;
     pointer-events: none;
   }
@@ -289,7 +291,7 @@
   .hero-numbers__part {
     display: inline-block;
     position: relative;
-    bottom: 680px;
+    bottom: 750px;
     left: 680px;
   }
 
@@ -300,7 +302,7 @@
   .hero-numbers__one {
     font-style: normal;
     font-weight: 900;
-    font-size: 28px;
+    font-size: 46px;
     line-height: 1.21;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -319,7 +321,9 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
+    width: 1200px;
     height: 587px;
+    margin: 0 auto;
     background-image: url(/src/images/hero-image/desktop-fon.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -349,14 +353,14 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     width: 367px;
-  
+
     color: var(--secondary-text-color);
   }
 
   .hero-set {
     position: relative;
-      bottom: 950px;
-      left: 0px;
+    bottom: 950px;
+    left: 0px;
     display: flex;
     align-items: center;
   }
@@ -367,6 +371,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.29;
+    text-decoration: none;
 
     display: flex;
     align-items: center;
@@ -403,7 +408,8 @@
     display: block;
     align-items: center;
     text-align: center;
-    text-decoration-line: underline;
+    text-decoration: none;
+    // text-decoration-line: underline;
     cursor: pointer;
 
     color: var(--accent-color);
@@ -413,7 +419,6 @@
     &:hover,
     &:focus {
       color: var(--border-color);
-
     }
   }
 
@@ -465,7 +470,7 @@
     display: inline-block;
     position: relative;
     bottom: 1050px;
-  right: -1100px;
+    right: -1100px;
   }
 
   .hero-numbers {
@@ -475,10 +480,16 @@
   .hero-numbers__one {
     font-style: normal;
     font-weight: 900;
-    font-size: 28px;
+    // @media screen and (min-width: 768px) {
+    //   font-size: 28px;
+    // }
+
     line-height: 1.21;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    // @media screen and (min-width: 1200px) {
+    //   font-size: 46px;
+    // }
   }
 
   .hero-numbers__text {
@@ -487,6 +498,9 @@
     font-weight: 400;
     font-size: 8px;
     line-height: 10px;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
 
     color: var(--secondary-text-color);
   }
@@ -496,4 +510,13 @@
   background-color: transparent;
   border: none;
   margin-top: 5px;
+}
+
+.hero-numbers__one {
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 46px;
+  }
 }

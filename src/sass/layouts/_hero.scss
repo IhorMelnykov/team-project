@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 767px) {
   .hero {
     background-image: url(/src/images/hero-image/mobile-fon.png);
@@ -39,14 +40,14 @@
   .hero-set {
     display: flex;
     align-items: center;
-    justify-content: center;
+    
   }
 
   .hero-button {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 8px;
     line-height: 1.29;
 
     display: flex;
@@ -58,13 +59,12 @@
     background-color: var(--main-background-color);
     color: var(--primary-text-color);
 
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 18px;
+    padding-right: 18px;
 
-    margin-top: 28px;
-    margin-right: 34px;
+    margin-right: 24px;
 
     &:hover,
     &:focus {
@@ -77,7 +77,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 8px;
     line-height: 1.21;
     cursor: pointer;
 
@@ -86,7 +86,7 @@
     color: var(--accent-color);
     background-color: var(--main-background-color);
     border: none;
-    margin-top: 40px;
+    
 
     &:hover,
     &:focus {
@@ -113,6 +113,9 @@
   }
 
   .hero-part {
+    width: 100%;
+    position: relative;
+    bottom: 66px;
     padding-left: 82px;
     padding-right: 81px;
   }
@@ -171,6 +174,8 @@
 
   .hero-set {
     display: flex;
+    align-items: center;
+    z-index: 10;
   }
 
   .hero-button {
@@ -262,6 +267,8 @@
     position: relative;
     left: 390px;
     bottom: 424px;
+    pointer-events: none;
+    z-index: 1;
   }
 
   .picture {
@@ -274,9 +281,10 @@
   }
 
   .hero-numbers__part {
+    display: inline-block;
     position: relative;
     bottom: 680px;
-    right: 10px;
+    left: 680px;
   }
 
   .hero-numbers {
@@ -341,6 +349,7 @@
 
   .hero-set {
     display: flex;
+    align-items: center;
   }
 
   .hero-button {
@@ -380,6 +389,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
+    background-color: var(--main-background-color);
 
     display: block;
     align-items: center;
@@ -388,7 +398,7 @@
     cursor: pointer;
 
     color: var(--accent-color);
-    background-color: var(--main-background-color);
+    background-color: transparent;
     border: none;
     margin-top: 32px;
 

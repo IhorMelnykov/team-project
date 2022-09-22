@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    height: 450px;
   }
 
   .hero-title {
@@ -19,26 +20,6 @@
     color: var(--secondary-text-color);
     margin-top: 57px;
     margin-bottom: 32px;
-    // padding-right: 100px;
-    @media screen and (min-width: 768px) {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 1.28;
-      letter-spacing: 0;
-      width: 181px;
-      font-size: 16px;
-      line-height: 0.8;
-    }
-
-      @media screen and (min-width: 1200px) {
-        width: 367px;
-        font-weight: 400;
-        font-size: 38px;
-        line-height: 1.26;
-        font-size: 16px;
-        line-height: 0.8;
-      }
-
   }
 
   .hero-title_span {
@@ -132,7 +113,6 @@
   }
 
   .hero-part {
-    margin-top: 31.55px;
     padding-left: 82px;
     padding-right: 81px;
   }
@@ -157,7 +137,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    height: 415px;
+    height: 350px;
     background-image: url(/src/images/hero-image/tablet-fon.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -250,7 +230,7 @@
 
   .hero-list {
     position: relative;
-    top: 90px;
+    top: 32px;
 
     &__image {
       width: 152px;
@@ -267,7 +247,7 @@
     width: 151px;
     position: relative;
     left: 216px;
-    bottom: 50px;
+    bottom: 112px;
   }
 
   .hero-additions__title {
@@ -281,7 +261,7 @@
   .hero-part {
     position: relative;
     left: 390px;
-    bottom: 353px;
+    bottom: 424px;
   }
 
   .picture {
@@ -325,7 +305,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
-    height: 664px;
+    height: 587px;
     background-image: url(/src/images/hero-image/desktop-fon.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -420,7 +400,7 @@
 
   .hero-list {
     position: relative;
-    top: 130px;
+    top: 50px;
 
     // &__image {
     // }
@@ -436,7 +416,7 @@
     width: 200px;
     position: relative;
     left: 235px;
-    bottom: 30px;
+    bottom: 98px;
   }
 
   .hero-additions__title {
@@ -450,7 +430,7 @@
   .hero-part {
     position: relative;
     left: 651px;
-    bottom: 513px;
+    bottom: 565px;
   }
 
   .picture {

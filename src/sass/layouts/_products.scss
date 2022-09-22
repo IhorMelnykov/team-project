@@ -1,287 +1,312 @@
 .products-section {
-    background-color: #FCFCFC;
-    background-image: url(../images/products-section/products-bg-min.png);
-    
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @include tablet {
-        padding-bottom: 82px;
-    }
-    @include desktop {
-        padding-bottom: 66px;
-    }
+  background-color: #fcfcfc;
+  background-image: url(../images/products-section/products-bg-min.png);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include tablet {
+    padding-bottom: 82px;
+  }
+  @include desktop {
+    padding-bottom: 66px;
+  }
 }
 
 .products-label {
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 22px;
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 12px;
-color: #131313;
-@include tablet {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #131313;
+  @include tablet {
     font-size: 22px;
-line-height: 1.22;
-}
-@include desktop {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 800;
-font-size: 22px;
-line-height: 1.22;
-text-align: center;
-text-transform: uppercase;
+    line-height: 1.22;
+  }
+  @include desktop {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
 
-color: #131313;
-}
+    color: #131313;
+  }
 }
 
 .products-cards-item:not(:first-child) {
-    margin-top: 164px;
-    @include tablet {
-        margin-top: 200px;
-    }
-    @include desktop {
-        margin-top: 303px;
-    }
+  margin-top: 164px;
+  @include tablet {
+    margin-top: 200px;
+  }
+  @include desktop {
+    margin-top: 303px;
+  }
 }
 
 .products-cards-item {
-    max-width: 280px;
-    width: 100%;
-    @include tablet {
-        max-width: 224px;
-    }
-    @include desktop {
-        max-width: 370px;
-    }
+  max-width: 280px;
+  width: 100%;
+  @include tablet {
+    max-width: 224px;
+  }
+  @include desktop {
+    max-width: 370px;
+  }
 }
-
-
-
 
 .products-card-1 {
-margin-top: 148px;
-@include tablet {
+  margin-top: 148px;
+  @include tablet {
     margin-top: 0px;
-}
-@include desktop {
+  }
+  @include desktop {
     margin-top: 0px;
+  }
 }
-}
-
 
 .products-title {
-    font-family: 'Seymour One';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 38px;
-text-align: center;
-letter-spacing: 0.04em;
-text-transform: uppercase;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-color: #131313;
-@include tablet {
+  color: #131313;
+  @include tablet {
     font-size: 34px;
-line-height: 1.26;
-}
-@include desktop {
-font-family: 'Seymour One';
-font-style: normal;
-font-weight: 400;
-font-size: 34px;
-line-height: 1.26;
-text-align: center;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-
-color: #131313;
-}
-}
-
-.products-cards-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    @include tablet {
-        flex-direction: row;
-        align-items: baseline;
-        gap: 16px;
-    }
-    @include tablet {
-        flex-direction: row;
-        align-items: baseline;
-        gap: 32px;
-    }
-}
-
-.products-card-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 420px;
-    @include tablet {
-        height: 428px;
-    }
-    @include desktop {
-        height: 535px;
-    }
-}
-
-
-
-.products-card-title {
-    position: relative;
-    font-family: 'Montserrat';
+    line-height: 1.26;
+  }
+  @include desktop {
+    font-family: 'Seymour One';
     font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.26;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+
     color: #131313;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 106px;
-    @include desktop {
-        margin-top: 166px;
-        font-size: 30px;
-line-height: 1.23;
-    }
+  }
+}
+
+.products-cards-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 16px;
+  }
+  @include tablet {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 32px;
+  }
+}
+
+.products-card-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+  @include tablet {
+    height: 428px;
+  }
+  @include desktop {
+    height: 535px;
+  }
+}
+
+.products-card-title {
+  position: relative;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 106px;
+  @include desktop {
+    margin-top: 166px;
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
 
 .products-card-title-1::before {
-    content: url(../images/products-section/icecream-mob-min.png);
-    transform: translateY(-115);
-    position: absolute;
-    @include tablet {
-        content: url(../images/products-section/icecream-tab-min.png);
-    }
-    @include desktop {
-        content: url(../images/products-section/icecream.png);
-        transform: translateY(-185);
-    }
+  content: url(../images/products-section/icecream-mob-min.png);
+  transform: translateY(-115);
+  position: absolute;
+  @include tablet {
+    content: url(../images/products-section/icecream-tab-min.png);
+  }
+  @include desktop {
+    content: url(../images/products-section/icecream.png);
+    transform: translateY(-185);
+  }
 }
 
 .products-card-title-2::before {
-    content: url(../images/products-section/icecoffee-mob-min.png);
-    transform: translateY(-115);
-    position: absolute;
-    @include desktop {
-        content: url(../images/products-section/icecoffee.png);
-        transform: translateY(-185);
-    }
+  content: url(../images/products-section/icecoffee-mob-min.png);
+  transform: translateY(-115);
+  position: absolute;
+  @include desktop {
+    content: url(../images/products-section/icecoffee.png);
+    transform: translateY(-185);
+  }
 }
 
 .products-card-title-3::before {
-    content: url(../images/products-section/milkshakes-mob-min.png);
-    transform: translateY(-115);
-    position: absolute;
-    @include desktop {
-        content: url(../images/products-section/milkshakes.png);
-        transform: translateY(-185);
-    }
+  content: url(../images/products-section/milkshakes-mob-min.png);
+  transform: translateY(-115);
+  position: absolute;
+  @include desktop {
+    content: url(../images/products-section/milkshakes.png);
+    transform: translateY(-185);
+  }
 }
 
 .products-card-text {
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 176%;
-text-align: center;
-letter-spacing: 0.04em;
-height: 100%;
-color: #131313;
-padding-right: 40px;
-padding-left: 40px;
-margin-top: 34px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  height: 100%;
+  color: #131313;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-top: 34px;
 
-position: relative;
-@include tablet {
+  position: relative;
+  @include tablet {
     padding-left: 26px;
     padding-right: 26px;
     margin-top: 40px;
-}
-@include desktop {
+  }
+  @include desktop {
     font-size: 16px;
-line-height: 176%;
-margin-top: 65px;
-max-width: 300px;
-}
+    line-height: 176%;
+    margin-top: 65px;
+    max-width: 300px;
+  }
 }
 
 .products-card-1 {
-    background: #AEC6A5;
-    border-radius: 24px;
+  background: #aec6a5;
+  border-radius: 24px;
 }
 
 .products-card-2 {
-    background: #EFD478;
-    border-radius: 24px;
+  background: #efd478;
+  border-radius: 24px;
 }
 
 .products-card-3 {
-    background: #D6936D;
-border-radius: 24px;
+  background: #d6936d;
+  border-radius: 24px;
 }
 
 .products-button {
-    outline: none;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    transform: translateY(-50);
-    background: transparent;
-    border: none;
-    .products-modal-arrow-hover, .products-modal-arrow-focus {
-        display: none;
-    }
-    @include tablet {
-        transform: translateY(-40);
-    }
-    @include desktop {
-        transform: translateY(-85);
-    }
+  outline: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50);
+  background: transparent;
+  border: none;
+  .products-modal-arrow-hover,
+  .products-modal-arrow-focus {
+    display: none;
+  }
+  @include tablet {
+    transform: translateY(-40);
+  }
+  @include desktop {
+    transform: translateY(-85);
+  }
 }
 
 .products-modal-arrow {
-    position: absolute;
+  position: absolute;
+  animation: fadeIn 1s;
+  animation: fadeOut 1s;
 }
 
 .products-modal-arrow-hover {
-    position: absolute;
+  position: absolute;
+  animation: fadeIn 1s;
+  animation: fadeOut 1s;
 }
 
 .products-modal-arrow-focus {
-    position: absolute;
+  position: absolute;
+  animation: fadeIn 1s;
+  animation: fadeOut 1s;
 }
 
 .products-button:focus {
-    .products-modal-arrow {
-        display: none;
-    }
-    .products-modal-arrow-hover {
-        display: block;
-    }
+  .products-modal-arrow {
+    display: none;
+  }
+  .products-modal-arrow-hover {
+    display: block;
+    animation: fadeIn 1s;
+    animation: fadeOut 1s;
+  }
 }
 
 .products-button:hover {
-    .products-modal-arrow {
-        display: none;
-    }
-    .products-modal-arrow-focus {
-        display: block;
-    }
+  .products-modal-arrow {
+    display: none;
+    animation: fadeIn 1s;
+    animation: fadeOut 1s;
+  }
+  .products-modal-arrow-focus {
+    display: block;
+    animation: fadeIn 1s;
+    animation: fadeOut 1s;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

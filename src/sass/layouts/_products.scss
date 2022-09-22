@@ -258,30 +258,54 @@ border-radius: 24px;
 
 .products-modal-arrow {
     position: absolute;
+    animation: fadeIn 1s;
+        animation: fadeOut 1s;
 }
 
 .products-modal-arrow-hover {
     position: absolute;
+    animation: fadeIn 1s;
+        animation: fadeOut 1s;
 }
 
 .products-modal-arrow-focus {
     position: absolute;
+    animation: fadeIn 1s;
+        animation: fadeOut 1s;
 }
 
 .products-button:focus {
     .products-modal-arrow {
         display: none;
+        animation: fadeIn 1s;
+        animation: fadeOut 1s;
     }
     .products-modal-arrow-hover {
         display: block;
+        animation: fadeIn 1s;
+        animation: fadeOut 1s;
     }
 }
 
 .products-button:hover {
     .products-modal-arrow {
         display: none;
+        animation: fadeIn 1s;
+        animation: fadeOut 1s;
     }
     .products-modal-arrow-focus {
         display: block;
+        animation: fadeIn 1s;
+        
     }
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes fadeOut {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

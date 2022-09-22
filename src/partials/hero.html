@@ -1,15 +1,12 @@
 <section class="hero">
   <div class="container">
     <div class="hero-section">
-      <h1 class="hero-title">ice cream made with passion</h1>
-      <ul class="hero-set">
-        <li class="hero-set__btn">
-          <button class="hero-button" type="button">Products</button>
-        </li>
-        <li class="hero-set__btn">
-          <button class="hero-btn" type="button">How it’s made?</button>
-        </li>
-      </ul>
+      <h1 class="hero-title">ice cream made with <br/><span class="hero-title_span">passion</span> </h1>
+      <div class="hero-set">
+          <a href="#products" class="hero-button" type="button">Products</a>
+          <a href="#about" class="hero-btn" type="button">How it’s made?</a>
+        </div>
+     
     </div>
     <div class="hero-list">
       <picture>
@@ -44,19 +41,17 @@
       </picture>
     </div>
     <div class="hero-part__text">
-      <ul class="hero-additions">
-        <li class="hero-additions__title">
+     <div class="hero-additions">
           <p class="hero-list__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-        </li>
-        <li class="hero-additions__title">
+        <button class="btn js-open-modal" data-modal="5">
           <svg class="hero-icon" width="40" height="40">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
-        </li>
-      </ul>
+          </button>
+        </div>
     </div>
 
     <div class="hero-part">
@@ -87,8 +82,7 @@
           src="./images/hero-image/ice-cream-smile.png"
           alt="big-ice-cream"
           width="447"
-          height="561"
-        />
+          height="561"/>
       </picture>
     </div>
     <div class="hero-numbers__part">

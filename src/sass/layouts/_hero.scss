@@ -37,7 +37,7 @@
 
   .hero-set {
     position: relative;
-    bottom: 360px;
+    bottom: 435px;
     left: 0px;
     display: flex;
     align-items: center;
@@ -85,7 +85,6 @@
     text-decoration-line: underline;
 
     color: var(--accent-color);
-    background-color: var(--main-background-color);
     border: none;
 
     &:hover,
@@ -121,12 +120,42 @@
     padding-right: 81px;
   }
 
+
   .hero-part__image {
     min-width: 219px;
     left: -25px;
     bottom: -75px;
     position: relative;
   }
+
+     .fon-blure_wrap {
+      width: 300px;
+      height: 400px;
+      position: relative;
+    }
+  
+    .hero-part_img {
+      display: inline;
+      position: relative;
+      width: 300px;
+      height: 400px;
+      position: absolute;
+      top: -29;
+      right: -25;
+    }
+  
+    .fon_blure {
+      width: 400px;
+      height: 550px;
+      position: absolute;
+      bottom: -115px;
+      right: -45px;
+      filter: blur(50px);
+    }
+  
+    .ice-icon {
+      filter: blur(50px);
+    }
 
   .hero-numbers {
     display: none;
@@ -178,7 +207,7 @@
 
   .hero-set {
     position: relative;
-    bottom: 650px;
+    bottom: 720px;
     left: 0px;
     display: flex;
     align-items: center;
@@ -274,7 +303,6 @@
     position: relative;
     display: inline-block;
     left: 370px;
-    // right: -380px;
     bottom: 385px;
     pointer-events: none;
   }
@@ -284,14 +312,42 @@
   }
 
   .hero-part__image {
+    display: inline;
     width: 257px;
     height: 324.92px;
   }
+    .fon-blure_wrap {
+      width: 300px;
+      height: 400px;
+      position: relative;
+    }
+  
+    .hero-part_img {
+      display: inline;
+      position: relative;
+      width: 300px;
+      height: 400px;
+      position: absolute;
+      top: 0;
+    }
+  
+    .fon_blure {
+      width: 400px;
+      height: 550px;
+      position: absolute;
+      bottom: -25px;
+      right: -32px;
+      filter: blur(50px);
+    }
+  
+    .ice-icon {
+      filter: blur(50px);
+    }
 
   .hero-numbers__part {
     display: inline-block;
     position: relative;
-    bottom: 750px;
+    bottom: 830px;
     left: 680px;
   }
 
@@ -426,9 +482,6 @@
     position: relative;
     top: 120px;
 
-    // &__image {
-    // }
-
     &__text {
       font-size: 14px;
       line-height: 1.42;
@@ -454,8 +507,30 @@
   .hero-part {
     display: inline-block;
     position: relative;
-    left: 670px;
-    bottom: 490px;
+    left: 620px;
+    bottom: 531px;
+  }
+  .fon-blure_wrap {
+    width: 477px;
+    height: 590px;
+    position: relative;
+  }
+  .hero-part_img {
+    position: relative;
+    width: 100%;
+    position: absolute;
+    top: 40;
+    }
+    
+  .fon_blure {
+    position: absolute;
+    top:-95px;
+    right: -90px;
+    filter: blur(50px);
+  }
+
+  .ice-icon {
+    filter: blur(50px);
   }
 
   .picture {
@@ -463,33 +538,32 @@
   }
 
   .hero-part__image {
-    margin-bottom: 0px;
+    margin-bottom: 0px;  
   }
 
   .hero-numbers__part {
     display: inline-block;
     position: relative;
-    bottom: 1050px;
+    bottom: 1155px;
     right: -1100px;
   }
 
+  .hero-numbers_list {
+    margin-bottom: 32px;
+  }
   .hero-numbers {
     text-align: right;
+    
   }
 
   .hero-numbers__one {
     font-style: normal;
     font-weight: 900;
-    // @media screen and (min-width: 768px) {
-    //   font-size: 28px;
-    // }
-
+    font-size: 28px;
     line-height: 1.21;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    // @media screen and (min-width: 1200px) {
-    //   font-size: 46px;
-    // }
+    margin-bottom: 15px;
   }
 
   .hero-numbers__text {
@@ -498,10 +572,6 @@
     font-weight: 400;
     font-size: 8px;
     line-height: 10px;
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-    }
-
     color: var(--secondary-text-color);
   }
 }

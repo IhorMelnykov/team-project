@@ -37,7 +37,7 @@
 
   .hero-set {
     position: relative;
-    bottom: 435px;
+    bottom: 320px;
     left: 0px;
     display: flex;
     align-items: baseline;
@@ -125,11 +125,11 @@
 
   .hero-part {
     display: inline-block;
-    width: 100%;
+    width: 220px;
+    height: 300px;
     position: relative;
-    bottom: 118px;
-    padding-left: 82px;
-    padding-right: 81px;
+    bottom: 39px;
+    left: 80px;
   }
 
   .hero-part__image {
@@ -139,27 +139,21 @@
     position: relative;
   }
 
-  .fon-blure_wrap {
-    width: 300px;
-    height: 400px;
-    position: relative;
-  }
-
   .hero-part_img {
     display: inline;
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 220px;
+    height: 270px;
     position: absolute;
     top: -29;
     right: -25;
   }
 
   .fon_blure {
-    width: 400px;
-    height: 550px;
+    width: 300px;
+    height: 400px;
     position: absolute;
-    bottom: -115px;
+    bottom: -65px;
     right: -45px;
     filter: blur(50px);
   }
@@ -177,10 +171,6 @@
   background-color: transparent;
   border: none;
 }
-
-// .background-filter {
-
-// }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
@@ -246,12 +236,6 @@
     padding-bottom: 5px;
     padding-left: 11px;
     padding-right: 11px;
-
-    // padding-top: 12px;
-    // padding-bottom: 12px;
-    // padding-left: 34px;
-    // padding-right: 34px;
-
     margin-right: 10px;
 
     &:hover {
@@ -281,7 +265,6 @@
     color: var(--accent-color);
     background-color: var(--main-background-color);
     border: none;
-    // margin-top: 10px;
 
     &:hover {
       color: var(--border-color);
@@ -293,7 +276,7 @@
 
   .hero-list {
     position: relative;
-    top: 65px;
+    top: 45px;
 
     &__image {
       width: 152px;
@@ -310,7 +293,7 @@
     width: 151px;
     position: relative;
     left: 180px;
-    bottom: 75px;
+    bottom: 95px;
   }
 
   .hero-additions__title {
@@ -323,9 +306,11 @@
 
   .hero-part {
     position: relative;
+    width: 300px;
+    height: 400px;
     display: inline-block;
     left: 370px;
-    bottom: 385px;
+    bottom: 375px;
     pointer-events: none;
   }
 
@@ -337,11 +322,6 @@
     display: inline;
     width: 257px;
     height: 324.92px;
-  }
-  .fon-blure_wrap {
-    width: 300px;
-    height: 400px;
-    position: relative;
   }
 
   .hero-part_img {
@@ -508,7 +488,7 @@
 
   .hero-list {
     position: relative;
-    top: 120px;
+    top: 127px;
 
     &__text {
       font-size: 14px;
@@ -528,21 +508,15 @@
     margin-bottom: 32px;
   }
 
-  .hero-icon {
-    fill: var(--secondary-text-color);
-  }
-
   .hero-part {
     display: inline-block;
-    position: relative;
-    left: 620px;
-    bottom: 531px;
-  }
-  .fon-blure_wrap {
     width: 477px;
     height: 590px;
     position: relative;
+    left: 620px;
+    bottom: 520px;
   }
+
   .hero-part_img {
     position: relative;
     width: 100%;
@@ -606,8 +580,24 @@
 .btn {
   background-color: transparent;
   border: none;
-  margin-top: 5px;
+  margin-top: 15px;
+  width: 60px;
+  height: 20px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
+ .hero-icon {
+   height: 20px;
+   fill: var(--secondary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   :focus {
+    transform: 250ms cubic-bezier(0.4, 0, 0.2, 0.8);
+    fill: var(--accent-color);
+
+   }
+ }
 
 .hero-numbers__one {
   @media screen and (min-width: 768px) {
